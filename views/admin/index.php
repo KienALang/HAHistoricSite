@@ -1,7 +1,6 @@
 <!doctype html>
 <head>
     <?php require 'views/includes/auth/head.php' ?>
-
 </head>
 <body>
 <!-- Left Panel -->
@@ -41,7 +40,8 @@
 
         <div class="col-sm-12">
             <div class="alert  alert-success alert-dismissible fade show" role="alert">
-                <span class="badge badge-pill badge-success">Success</span> You successfully read this important alert message.
+                <span class="badge badge-pill badge-success">Success</span> You successfully read this important alert
+                message.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -53,7 +53,8 @@
             <div class="card text-white bg-flat-color-1">
                 <div class="card-body pb-0">
                     <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
                             <i class="fa fa-cog"></i>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -83,7 +84,8 @@
             <div class="card text-white bg-flat-color-2">
                 <div class="card-body pb-0">
                     <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
                             <i class="fa fa-cog"></i>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -112,7 +114,8 @@
             <div class="card text-white bg-flat-color-3">
                 <div class="card-body pb-0">
                     <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
                             <i class="fa fa-cog"></i>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -141,7 +144,8 @@
             <div class="card text-white bg-flat-color-4">
                 <div class="card-body pb-0">
                     <div class="dropdown float-right">
-                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
                             <i class="fa fa-cog"></i>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -247,7 +251,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-8 hidden-sm-down">
-                            <button type="button" class="btn btn-primary float-right bg-flat-color-1"><i class="fa fa-cloud-download"></i></button>
+                            <button type="button" class="btn btn-primary float-right bg-flat-color-1"><i
+                                        class="fa fa-cloud-download"></i></button>
                             <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
                                 <div class="btn-group mr-3" data-toggle="buttons" aria-label="First group">
                                     <label class="btn btn-outline-secondary">
@@ -265,7 +270,7 @@
 
 
                     </div><!--/.row-->
-                    <div class="chart-wrapper mt-4" >
+                    <div class="chart-wrapper mt-4">
                         <canvas id="trafficChart" style="height:200px;" height="200"></canvas>
                     </div>
 
@@ -276,35 +281,40 @@
                             <div class="text-muted">Visits</div>
                             <strong>29.703 Users (40%)</strong>
                             <div class="progress progress-xs mt-2" style="height: 5px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;"
+                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </li>
                         <li class="hidden-sm-down">
                             <div class="text-muted">Unique</div>
                             <strong>24.093 Users (20%)</strong>
                             <div class="progress progress-xs mt-2" style="height: 5px;">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%;"
+                                     aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </li>
                         <li>
                             <div class="text-muted">Pageviews</div>
                             <strong>78.706 Views (60%)</strong>
                             <div class="progress progress-xs mt-2" style="height: 5px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </li>
                         <li class="hidden-sm-down">
                             <div class="text-muted">New Users</div>
                             <strong>22.123 Users (80%)</strong>
                             <div class="progress progress-xs mt-2" style="height: 5px;">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;"
+                                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </li>
                         <li class="hidden-sm-down">
                             <div class="text-muted">Bounce Rate</div>
                             <strong>40.15%</strong>
                             <div class="progress progress-xs mt-2" style="height: 5px;">
-                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </li>
                     </ul>
@@ -322,7 +332,8 @@
 
                     <div class="media">
                         <a href="#">
-                            <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="<?php echo URL; ?>images/admin.jpg">
+                            <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt=""
+                                 src="<?php echo URL; ?>images/admin.jpg">
                         </a>
                         <div class="media-body">
                             <h2 class="text-white display-6">Jim Doe</h2>
@@ -347,7 +358,8 @@
                     </ul>
                 </div>
                 <div class="twt-write col-sm-12">
-                    <textarea placeholder="Write your Tweet and Enter" rows="1" class="form-control t-text-area"></textarea>
+                    <textarea placeholder="Write your Tweet and Enter" rows="1"
+                              class="form-control t-text-area"></textarea>
                 </div>
                 <footer class="twt-footer">
                     <a href="#"><i class="fa fa-camera"></i></a>
@@ -405,7 +417,7 @@
         </div>
 
         <div class="col-xl-6">
-            <div class="card" >
+            <div class="card">
                 <div class="card-header">
                     <h4>World</h4>
                 </div>

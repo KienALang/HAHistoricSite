@@ -14,6 +14,7 @@ class Index extends Controller
 
     function index()
     {
+        //$tintuc = load from DB
         $this->view->render('index');
     }
 }

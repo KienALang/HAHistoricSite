@@ -8,7 +8,7 @@
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay page-inside" style="background-image: url(img/hero_2.jpg)">
+<section class="site-hero overlay page-inside" style='background-image: url("<?php echo URL; ?>public/img/hero_2.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">

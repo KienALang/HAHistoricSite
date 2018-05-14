@@ -18,7 +18,9 @@ class User_Model extends Model
         $stmt->execute();
         return $stmt->fetchAll();
     }
-    function getUserById($id) {
+
+    function getUserById($id)
+    {
         $sql = "SELECT * FROM user WHERE user_id = ?";
         $stmt = $this->db->prepare($sql);
         $stmt->execute(array($id));

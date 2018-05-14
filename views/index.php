@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
-                <h1 class="heading" data-aos="fade-up"><em><?php echo BRAND_NAME?></em>, Quảng Nam</h1>
+                <h1 class="heading" data-aos="fade-up"><em><?php echo BRAND_NAME ?></em>, Quảng Nam</h1>
                 <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">Trang web giới thiệu các khu di tích
                     ở TP Hội An, tỉnh Quảng Nam.</p>
                 <p data-aos="fade-up" data-aos-delay="100"><a href="#"

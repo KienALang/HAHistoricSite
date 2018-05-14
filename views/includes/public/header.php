@@ -18,11 +18,10 @@
                             <div class="row full-height align-items-center">
                                 <div class="col-md-6">
                                     <ul class="list-unstyled menu">
-                                        <li class="active"><a href="index.php">Trang Chủ</a></li>
-                                        <li><a href="hotel.html">Các khu di tích</a></li>
-                                        <li><a href="about.html">Về chúng tôi</a></li>
-                                        <li><a href="blog.html">Trang blog</a></li>
-                                        <li><a href="contact.html">Liên hệ</a></li>
+                                        <li class="active"><a href="<?php echo URL; ?>">Trang Chủ</a></li>
+                                        <li><a href="<?php echo URL; ?>historic_site">Các khu di tích</a></li>
+                                        <li><a href="<?php echo URL; ?>about">Về chúng tôi</a></li>
+                                        <li><a href="<?php echo URL; ?>contact">Liên hệ</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 extra-info">

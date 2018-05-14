@@ -28,10 +28,10 @@
                 <h3 class="menu-title">Thống kê</h3><!-- /.menu-title -->
 
                 <li>
-                    <a href="#"> <i class="menu-icon fa fa-line-chart"></i>Lượng Truy Cập </a>
+                    <a href="<?php echo URL; ?>chart"> <i class="menu-icon fa fa-line-chart"></i>Lượng Truy Cập </a>
                 </li>
                 <li>
-                    <a href="#"> <i class="menu-icon fa fa-area-chart"></i>Các Bài Viết </a>
+                    <a href="<?php echo URL; ?>chart"> <i class="menu-icon fa fa-area-chart"></i>Các Bài Viết </a>
                 </li>
 
                 <h3 class="menu-title">Extras</h3><!-- /.menu-title -->

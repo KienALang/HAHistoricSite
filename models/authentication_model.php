@@ -14,8 +14,8 @@ class Authentication_Model extends Model
     function doLogin($username, $password)
     {
 
-        $statement = $this->db->prepare("SELECT * FROM user WHERE username = :username AND password = md5(:password)");
-        $statement->execute(array(':username' => $username, ':password' => $password));
+        $statement = $this->db->prepare("SELECT * FROM user WHERE username = ? AND password = md5(?)");
+        $statement->execute(array($username, $password));
         $users = $statement->fetchAll();
 
         $count = $statement->rowCount();

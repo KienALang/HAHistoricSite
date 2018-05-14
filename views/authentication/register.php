@@ -52,8 +52,8 @@
 
 <script src="/public/js/jquery-3.2.1.min.js"></script>
 <script src="/public/js/popper.min.js"></script>
-<script src="/assets/js/plugins.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="/public/auth_js/plugins.js"></script>
+<script src="/public/auth_js/main.js"></script>
 
 
 </body>

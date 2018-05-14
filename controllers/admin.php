@@ -23,13 +23,6 @@ class Admin extends Controller
         $this->userModel = new User_Model(); */
     }
 
-    function index()
-    {
-        //$users = $this->userModel->getAll();
-
-        $this->view->render("admin/index");
-    }
-
     function search()
     {
         $keyWords = $_GET['key-word'];
@@ -57,10 +50,18 @@ class Admin extends Controller
         );
     }
 
-    function doUpdate() {
+    function doUpdate()
+    {
         $user = array($_POST['username'], $_POST['email'], $_POST['fullName'], $_POST['userId']);
         $this->userModel->update($user);
         $this->index();
+    }
+
+    function index()
+    {
+        //$users = $this->userModel->getAll();
+
+        $this->view->render("admin/index");
     }
 
     function add()
@@ -68,7 +69,8 @@ class Admin extends Controller
         $this->view->render("admin/add");
     }
 
-    function doAdd() {
+    function doAdd()
+    {
         $username = $_POST['username'];
         $email = $_POST['email'];
         $fullName = $_POST['fullName'];

@@ -39,8 +39,7 @@ class Authentication extends Controller
             Session::set('user', $user);
             if ($user['roleId'] == 1) {
                 header('location: ../admin');
-            }
-            else {
+            } else {
                 $this->view->render("user/index");
             }
         } else {
