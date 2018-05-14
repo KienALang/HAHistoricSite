@@ -70,25 +70,26 @@
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Tên</th>
-                                    <th>Mô Tả</th>
                                     <th>Hình Ảnh</th>
-                                    <th>File PDF</th>
                                     <th>Thời gian tạo</th>
                                     <th>Tên Loại</th>
                                     <th>Số lượng View</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>Giếng</td>
-                                    <td>ÂFẦkjfkâkjk nkjsjkds</td>
-                                    <td>link hình ảnh</td>
-                                    <td>link file PDF</td>
-                                    <td>Thời gian tạo</td>
-                                    <td>Tên loại</td>
-                                    <td>12345</td>
-                                </tr>
+                                <?php foreach ($hs as $item) { ?>
+                                    <tr>
+                                        <td><?php echo $item['hs_id']?></td>
+                                        <td><?php echo $item['hs_name']?></td>
+                                        <td><?php echo $item['hs_image']?></td>
+                                        <td><?php echo $item['create_time']?></td>
+                                        <td><?php echo $item['cate_name']?></td>
+                                        <td><?php echo $item['hs_view_count']?></td>
+                                    </tr>
+                                <?php } ?>
+
                                 </tbody>
                             </table>
                         </div>

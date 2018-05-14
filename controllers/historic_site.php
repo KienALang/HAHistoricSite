@@ -15,6 +15,7 @@ class Historic_Site extends Controller
 
     function index()
     {
-        $this->view->render("historic_site/index");
+        $hs = $this->model->getAll();
+        $this->view->render("historic_site/index", ['hs'=> $hs]);
     }
 }
