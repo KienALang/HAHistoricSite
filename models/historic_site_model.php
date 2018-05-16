@@ -21,4 +21,11 @@ class Historic_Site_Model extends Model
         return $stmt->fetchAll();
     }
 
+    function addItem($hs)
+    {
+        $sql = "INSERT INTO historic_site(hs_name, hs_description, hs_detail, hs_image, hs_pdf, create_time, cate_id) VALUES(?, ?, ?, ?, ?, ?, ?)";
+        $stmt = $this->db->prepare($sql);
+        return $stmt->execute(array_values ($hs));
+    }
+
 }

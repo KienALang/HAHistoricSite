@@ -1,24 +1,7 @@
 <!doctype html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Di Tích</title>
-    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="apple-icon.png">
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/normalize.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/flag-icon.min.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/cs-skin-elastic.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/lib/datatable/dataTables.bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
-    <link rel="stylesheet" href="<?php echo URL; ?>public/scss/style.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+   <?php require 'views/includes/auth/head.php' ?>
+   <title>Bài đăng</title>
 
 </head>
 <body>
@@ -66,6 +49,11 @@
                         <div class="card-header">
                             <strong class="card-title">Di tích</strong>
                         </div>
+                        <?php if(isset($_GET['msg'])) { ?>
+                            <div class="alert alert-success">
+                                Thêm bài đăng thành công!
+                            </div>
+                        <?php } ?>
                         <div class="card-body">
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                 <thead>

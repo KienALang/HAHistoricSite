@@ -20,8 +20,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Di Tích</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-puzzle-piece"></i><a href="#">Xem Toàn Bộ</a></li>
-                        <li><i class="fa fa-plus"></i><a href="#">Thêm Mới</a></li>
+                        <li><i class="fa fa-puzzle-piece"></i><a href="<?php echo URL; ?>historic_site">Xem Toàn Bộ</a></li>
+                        <li><i class="fa fa-plus"></i><a href="<?php echo URL; ?>historic_site/create">Thêm Mới</a></li>
                     </ul>
                 </li>
 
