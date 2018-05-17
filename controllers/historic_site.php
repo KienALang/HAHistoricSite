@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Kenny
- * Date: 5/14/2018
- * Time: 8:02
- */
 
 require('./models/category_model.php');
 

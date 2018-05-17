@@ -2889,6 +2889,15 @@ header .form-inline .search-form.close {
         padding: 15px;
     }
 
+    .card-body  .image-admin img {
+        width: 550px !important;
+        height: 300px !important;
+    }
+
+    .card-body a {
+        color: white;
+    }
+
     .badges button {
         margin: 2px 0;
     }
