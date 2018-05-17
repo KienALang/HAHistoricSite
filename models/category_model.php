@@ -21,4 +21,19 @@ class Category_Model extends Model
         return $stmt->fetchAll();
     }
 
+    function getItemById($id)
+    {
+        $sql = "SELECT * FROM category WHERE cate_id = ? ";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute(array($id));
+        $categories = $stmt->fetchAll();
+        $count = $stmt->rowCount();
+        if ($count == 1) {
+            return $categories[0];
+        } else {
+            return null;
+        }
+    }
+
+
 }

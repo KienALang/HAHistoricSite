@@ -28,70 +28,48 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="heading" data-aos="fade-right">Bạn có thể tới thăm quan</h2>
+                <h2 class="heading" data-aos="fade-right">Danh mục</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right">
-                <a href="restaurant.html"><img src="<?php echo URL; ?>public/images/img_1.jpg" alt="Image placeholder"
-                                               class="img-fluid"> </a>
-                <h3><a href="restaurant.html">Food &amp; Wines</a></h3>
-                <div class="reviews-star float-left">
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star-half"></span>
-                    <span class="ion-android-star-outline"></span>
-                </div>
-                <span class="reviews-count float-right">
-              3,239 reviews
-            </span>
+            <?php foreach ($categories as $category) { ?>
+            <div class="col-lg-3 col-md-6 visit mb-3 historic-category" data-aos="fade-right">
+                <a href="<?php echo URL; ?>show/category?id=<?php echo $category['cate_id'] ?>">
+                    <img src="<?php echo URL; ?>public/images/img_1.jpg" alt="<?php echo $category['cate_name'] ?>" class="img-fluid">
+                </a>
+                <h3><a href="<?php echo URL; ?>show/category?id=<?php echo $category['cate_id'] ?>"><?php echo $category['cate_name'] ?></h3>
             </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="100">
-                <a href="restaurant.html"><img src="<?php echo URL; ?>public/images/img_2.jpg" alt="Image placeholder"
-                                               class="img-fluid"> </a>
-                <h3><a href="restaurant.html">Resort &amp; Spa</a></h3>
-                <div class="reviews-star float-left">
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star-half"></span>
-                    <span class="ion-android-star-outline"></span>
-                </div>
-                <span class="reviews-count float-right">
-              4,921 reviews
-            </span>
+            <?php } ?> 
+        </div>
+    </div>
+</section>
+
+<section class="section visit-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="heading" data-aos="fade-right">Đề xuất cho bạn</h2>
             </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="200">
-                <a href="hotel.html"><img src="<?php echo URL; ?>public/images/img_4.jpg" alt="Image placeholder"
-                                          class="img-fluid"> </a>
-                <h3><a href="hotel.html">Hotel Rooms</a></h3>
-                <div class="reviews-star float-left">
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star-outline"></span>
-                </div>
+        </div>
+        <div class="row">
+            <?php foreach ($hsOffer as $item) { ?>
+                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="100">
+                <a href="<?php echo URL; ?>show/historic?id=<?php echo $item['hs_id'] ?>">
+                    <?php if($item['hs_image'] != NULL) { ?>
+                        <img src="<?php echo URL; ?>upload/images/<?php echo $item['hs_image'] ?>" class="img-fluid">
+                    <?php } else { ?>
+                        <img src="<?php echo URL; ?>public/images/default.jpg" class="img-fluid">
+                    <?php } ?>
+                </a>
+                <h3>
+                    <a href="<?php echo URL; ?>show/historic?id=<?php echo $item['hs_id'] ?>"><?php echo $item['hs_name'] ?></a>
+                </h3>
+                
                 <span class="reviews-count float-right">
-              2,112 reviews
-            </span>
+                    <?php echo $item['hs_view_count'] ?> lượt xem
+                </span>
             </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="300">
-                <a href="yacht.html"><img src="<?php echo URL; ?>public/images/img_5.jpg" alt="Image placeholder"
-                                          class="img-fluid"> </a>
-                <h3><a href="yacht.html">Yacht Club</a></h3>
-                <div class="reviews-star float-left">
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star"></span>
-                    <span class="ion-android-star-outline"></span>
-                </div>
-                <span class="reviews-count float-right">
-              6,421 reviews
-            </span>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>
@@ -109,24 +87,11 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+                    <?php foreach ($slides as $slide) { ?>
                     <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/images/slider-1.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?php echo URL; ?>upload/slides/<?php echo $slide['image'] ?>" alt="<?php echo $slide['name'] ?>" class="img-fluid">
                     </div>
-                    <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/images/slider-2.jpg" alt="Image placeholder" class="img-fluid">
-                    </div>
-                    <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/images/slider-3.jpg" alt="Image placeholder" class="img-fluid">
-                    </div>
-                    <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/images/slider-4.jpg" alt="Image placeholder" class="img-fluid">
-                    </div>
-                    <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/images/slider-5.jpg" alt="Image placeholder" class="img-fluid">
-                    </div>
-                    <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/images/slider-6.jpg" alt="Image placeholder" class="img-fluid">
-                    </div>
+                    <?php } ?>
                 </div>
                 <!-- END slider -->
             </div>
@@ -147,38 +112,25 @@
             </div>
         </div>
         <div class="row">
+            <?php foreach ($hsRecently as $item) { ?>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="<?php echo URL; ?>public/images/img_1.jpg"
-                                                          alt="Image placeholder" class="img-fluid"></a>
+                    <a href="<?php echo URL; ?>show/historic?id=<?php echo $item['hs_id'] ?>" class="mb-4 d-block">
+                        <?php if($item['hs_image'] != NULL) { ?>
+                            <img src="<?php echo URL; ?>upload/images/<?php echo $item['hs_image'] ?>" class="img-fluid">
+                        <?php } else { ?>
+                            <img src="<?php echo URL; ?>public/images/default.jpg" class="img-fluid">
+                        <?php } ?>
+                    </a>
                     <div class="media-body">
-                        <span class="meta-post">February 26, 2018</span>
-                        <h2 class="mt-0 mb-3"><a href="#">Five Reasons to Stay at Villa Resort</a></h2>
+                        <span class="meta-post"><?php echo date("F j, Y, g:i a", strtotime($item['create_time'])) ?></span>
+                        <h2 class="mt-0 mb-3"><a href="<?php echo URL; ?>show/historic?id=<?php echo $item['hs_id'] ?>"><?php echo $item['hs_name'] ?></a></h2>
                     </div>
                 </div>
 
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
-                <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="<?php echo URL; ?>public/images/img_2.jpg"
-                                                          alt="Image placeholder" class="img-fluid"></a>
-                    <div class="media-body">
-                        <span class="meta-post">February 26, 2018</span>
-                        <h2 class="mt-0 mb-3"><a href="#">Five Reasons to Stay at Villa Resort</a></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
-                <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="<?php echo URL; ?>public/images/img_3.jpg"
-                                                          alt="Image placeholder" class="img-fluid"></a>
-                    <div class="media-body">
-                        <span class="meta-post">February 26, 2018</span>
-                        <h2 class="mt-0 mb-3"><a href="#">Five Reasons to Stay at Villa Resort</a></h2>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>
