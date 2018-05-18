@@ -74,7 +74,7 @@
                         </a>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?php echo URL; ?>images/avatar/4.jpg"></span>
+                                                                src="<?php echo URL; ?>public/images/avatar/4.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Rachel Santos</span>
                                     <span class="time float-right">15 minutes ago</span>
@@ -89,7 +89,7 @@
         <div class="col-sm-5">
             <div class="user-area dropdown float-right">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="user-avatar rounded-circle" src="<?php echo URL; ?>images/admin.jpg" alt="User Avatar">
+                    <img class="user-avatar rounded-circle" src="<?php echo URL; ?>public/images/admin.jpg" alt="User Avatar">
                 </a>
 
                 <div class="user-menu dropdown-menu">

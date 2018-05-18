@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo URL; ?>public/fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/flag-icon.min.css">
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/cs-skin-elastic.css">
+
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/lib/datatable/dataTables.bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
     <link rel="stylesheet" href="<?php echo URL; ?>public/scss/style.css">
@@ -60,7 +61,6 @@
     <div class="content mt-3">
         <div class="animated fadeIn">
             <div class="row">
-
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
@@ -76,17 +76,30 @@
                                     <th>Thời gian tạo</th>
                                     <th>Tên Loại</th>
                                     <th>Số lượng View</th>
+                                    <th>Xử lý</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($hs as $item) { ?>
                                     <tr>
-                                        <td><?php echo $item['hs_id']?></td>
-                                        <td><?php echo $item['hs_name']?></td>
-                                        <td><?php echo $item['hs_image']?></td>
-                                        <td><?php echo $item['create_time']?></td>
-                                        <td><?php echo $item['cate_name']?></td>
-                                        <td><?php echo $item['hs_view_count']?></td>
+                                        <td><?php echo $item['hs_id'] ?></td>
+                                        <?php
+                                            $postTile = $item['hs_name'];
+                                            if (strlen($postTile) > 20) {
+                                                $postTile = substr($postTile, 0, 25) . "...";
+                                            }
+                                        ?>
+                                        <td><?php echo $postTile ?></td>
+                                        <td><?php echo $item['hs_image'] ?></td>
+                                        <td><?php echo $item['create_time'] ?></td>
+                                        <td><?php echo $item['cate_name'] ?></td>
+                                        <td><?php echo $item['hs_view_count'] ?></td>
+                                        <td>
+                                            <a href="<?php echo URL; ?>historic_site/viewUpdateForm/<?php echo $item['hs_id'] ?>"
+                                               style="color: #2a62bc;"><i class="fa fa-external-link"></i></a>
+                                            <a href="<?php echo URL; ?>historic_site/delete/<?php echo $item['hs_id'] ?>"
+                                               style="color: red;"><i class="fa fa-trash-o"></i></a>
+                                        </td>
                                     </tr>
                                 <?php } ?>
 
@@ -95,8 +108,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div><!-- .animated -->
     </div><!-- .content -->

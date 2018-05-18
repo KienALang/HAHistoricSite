@@ -12,5 +12,6 @@ require 'libs/Session.php';
 
 require 'config/paths.php';
 require 'config/database.php';
+require 'config/app_const.php';
 
 $app = new Bootstrap();
