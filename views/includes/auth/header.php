@@ -47,7 +47,7 @@
                         <p class="red">Bạn có 4 bình luận mới</p>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?php echo URL; ?>images/avatar/1.jpg"></span>
+                                                                src="<?php echo URL; ?>public/images/avatar/1.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Jonathan Smith</span>
                                     <span class="time float-right">Just now</span>
@@ -56,7 +56,7 @@
                         </a>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?php echo URL; ?>images/avatar/2.jpg"></span>
+                                                                src="<?php echo URL; ?>public/images/avatar/2.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Jack Sanders</span>
                                     <span class="time float-right">5 minutes ago</span>
@@ -65,7 +65,7 @@
                         </a>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?php echo URL; ?>images/avatar/3.jpg"></span>
+                                                                src="<?php echo URL; ?>public/images/avatar/3.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Cheryl Wheeler</span>
                                     <span class="time float-right">10 minutes ago</span>
@@ -74,7 +74,7 @@
                         </a>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?php echo URL; ?>images/avatar/4.jpg"></span>
+                                                                src="<?php echo URL; ?>public/images/avatar/4.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Rachel Santos</span>
                                     <span class="time float-right">15 minutes ago</span>
@@ -89,7 +89,7 @@
         <div class="col-sm-5">
             <div class="user-area dropdown float-right">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="user-avatar rounded-circle" src="<?php echo URL; ?>images/admin.jpg" alt="User Avatar">
+                    <img class="user-avatar rounded-circle" src="<?php echo URL; ?>public/images/admin.jpg" alt="User Avatar">
                 </a>
 
                 <div class="user-menu dropdown-menu">

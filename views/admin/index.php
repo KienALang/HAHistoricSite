@@ -436,13 +436,13 @@
 
 <?php require 'views/includes/auth/script.php' ?>
 
-<script src="<?php echo URL; ?>assets/js/lib/chart-js/Chart.bundle.js"></script>
-<script src="<?php echo URL; ?>assets/js/dashboard.js"></script>
-<script src="<?php echo URL; ?>assets/js/widgets.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/jquery.vmap.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/jquery.vmap.min.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+<script src="<?php echo URL; ?>public/auth_js/lib/chart-js/Chart.bundle.js"></script>
+<script src="<?php echo URL; ?>public/auth_js/dashboard.js"></script>
+<script src="<?php echo URL; ?>public/auth_js/widgets.js"></script>
+<script src="<?php echo URL; ?>public/auth_js/lib/vector-map/jquery.vmap.js"></script>
+<script src="<?php echo URL; ?>public/auth_js/lib/vector-map/jquery.vmap.min.js"></script>
+<script src="<?php echo URL; ?>public/auth_js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+<script src="<?php echo URL; ?>public/auth_js/lib/vector-map/country/jquery.vmap.world.js"></script>
 <script>
     (function ($) {
         "use strict";

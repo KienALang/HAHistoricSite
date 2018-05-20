@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo URL; ?>public/fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/flag-icon.min.css">
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/cs-skin-elastic.css">
+
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/lib/datatable/dataTables.bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
     <link rel="stylesheet" href="<?php echo URL; ?>public/scss/style.css">
@@ -60,7 +61,6 @@
     <div class="content mt-3">
         <div class="animated fadeIn">
             <div class="row">
-
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
