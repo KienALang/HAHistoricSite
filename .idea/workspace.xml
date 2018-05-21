@@ -2,19 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fdcdc27-00cf-4074-9f8e-6d76f12fde37" name="Default" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/controllers/category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/slides.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper/function_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/category_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/slides_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/auth_js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/auth_js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Local Disk (D) - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/images/anh-dep-tinh-ban007-1526465186.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/images/anh-dep-tinh-ban007-1526465468.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/images/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/pdfs/chua-kim-buu-1526465468.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/slides/Du-lich-hoi-an-cam-nang-tu-a-den-z-iVIVU.com-18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/slides/hoi-an-excursions-1526532248.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/slides/hoian1-1526528351.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/show/category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/show/historic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/slides/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/slides/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/slides/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/paths.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/authentication/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/authentication/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/error/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/error/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/historic_site.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historic_site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/historic_site.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/historic_site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/historic_site_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/historic_site_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/historic_site/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historic_site/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/historic_site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historic_site/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/includes/auth/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/auth/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/auth/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/auth/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/auth/left_panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/auth/left_panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/includes/auth/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/auth/script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/public/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/public/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/public/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/public/head.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/includes/public/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/public/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/public/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/public/script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,30 +74,46 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="ha_historic_site: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ha_historic_site@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ha_historic_site: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="category: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ha_historic_site@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ha_historic_site: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="historic_site: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="paths.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/show/category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-76">
+              <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="historic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/show/historic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-480">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paths.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/paths.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="40">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -87,12 +126,9 @@
       <find>href=&quot;assets</find>
       <find>href</find>
       <find>assets</find>
-      <find>public/img/</find>
-      <find>php echo</find>
-      <find>&lt;?php echo URL; ?&gt;public/js/</find>
-      <find>&lt;?= URL; ?&gt;public/css/</find>
       <find>&lt;?= URL; ?&gt;public/images/</find>
-      <find>&lt;img src=&quot;img/</find>
+      <find>&lt;?= URL; ?&gt;images/</find>
+      <find>php echo</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;&lt;?php echo URL; ?&gt;public/img</replace>
@@ -100,12 +136,8 @@
       <replace>src=&quot;&lt;?php echo URL; ?&gt;images</replace>
       <replace>src=&quot;&lt;?php echo URL; ?&gt;assets</replace>
       <replace>public</replace>
-      <replace>public/images/</replace>
-      <replace>=</replace>
-      <replace>&lt;?= PUBLIC_JS; ?&gt;</replace>
-      <replace>&lt;?= CSS; ?&gt;</replace>
       <replace>&lt;?= IMAGES; ?&gt;</replace>
-      <replace>&lt;img src=&quot;&lt;?= IMAGES; ?&gt;</replace>
+      <replace>=</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -123,40 +155,44 @@
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/controllers/admin.php" />
         <option value="$PROJECT_DIR$/views/hotel.html" />
+        <option value="$PROJECT_DIR$/views/includes/public/script.php" />
+        <option value="$PROJECT_DIR$/views/includes/public/footer.php" />
+        <option value="$PROJECT_DIR$/views/contact.php" />
+        <option value="$PROJECT_DIR$/views/about.php" />
+        <option value="$PROJECT_DIR$/views/includes/public/head.php" />
+        <option value="$PROJECT_DIR$/config/paths.php" />
         <option value="$PROJECT_DIR$/views/authentication/register.php" />
         <option value="$PROJECT_DIR$/public/scss/style.css" />
         <option value="$PROJECT_DIR$/controllers/error_page.php" />
         <option value="$PROJECT_DIR$/controllers/mError.php" />
         <option value="$PROJECT_DIR$/libs/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/views/includes/auth/header.php" />
+        <option value="$PROJECT_DIR$/views/authentication/login.php" />
         <option value="$PROJECT_DIR$/controllers/authentication.php" />
         <option value="$PROJECT_DIR$/views/statistic/chart.html" />
         <option value="$PROJECT_DIR$/controllers/chart.php" />
+        <option value="$PROJECT_DIR$/views/error/index.php" />
         <option value="$PROJECT_DIR$/views/statistic/chart.php" />
         <option value="$PROJECT_DIR$/views/includes/auth/left_panel.php" />
+        <option value="$PROJECT_DIR$/views/historic_site.php" />
         <option value="$PROJECT_DIR$/controllers/about.php" />
+        <option value="$PROJECT_DIR$/views/includes/public/header.php" />
         <option value="$PROJECT_DIR$/controllers/contact.php" />
-        <option value="$PROJECT_DIR$/controllers/index.php" />
         <option value="$PROJECT_DIR$/models/authentication_model.php" />
-        <option value="$PROJECT_DIR$/views/admin/index.php" />
-        <option value="$PROJECT_DIR$/views/historic_site/create.php" />
         <option value="$PROJECT_DIR$/models/historic_site_model.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5b544f99-b7d5-4cfe-85a5-e15fb931ff8d/console.sql" />
-        <option value="$PROJECT_DIR$/controllers/historic_site.php" />
-        <option value="$PROJECT_DIR$/views/historic_site/index.php" />
-        <option value="$PROJECT_DIR$/views/includes/public/footer.php" />
-        <option value="$PROJECT_DIR$/views/includes/public/header.php" />
-        <option value="$PROJECT_DIR$/views/authentication/login.php" />
-        <option value="$PROJECT_DIR$/views/error/index.php" />
         <option value="$PROJECT_DIR$/views/includes/auth/head.php" />
+        <option value="$PROJECT_DIR$/controllers/index.php" />
+        <option value="$PROJECT_DIR$/views/historic_site/index.php" />
+        <option value="$PROJECT_DIR$/views/includes/auth/header.php" />
+        <option value="$PROJECT_DIR$/controllers/historic_site.php" />
+        <option value="$PROJECT_DIR$/views/admin/index.php" />
+        <option value="$PROJECT_DIR$/views/slides/index.php" />
         <option value="$PROJECT_DIR$/views/includes/auth/script.php" />
-        <option value="$PROJECT_DIR$/views/includes/public/script.php" />
-        <option value="$PROJECT_DIR$/views/includes/public/head.php" />
+        <option value="$PROJECT_DIR$/views/slides/create.php" />
+        <option value="$PROJECT_DIR$/views/historic_site/create.php" />
         <option value="$PROJECT_DIR$/views/index.php" />
-        <option value="$PROJECT_DIR$/views/historic_site.php" />
-        <option value="$PROJECT_DIR$/views/contact.php" />
-        <option value="$PROJECT_DIR$/views/about.php" />
-        <option value="$PROJECT_DIR$/config/paths.php" />
+        <option value="$PROJECT_DIR$/views/show/category.php" />
+        <option value="$PROJECT_DIR$/views/show/historic.php" />
       </list>
     </option>
   </component>
@@ -199,12 +235,34 @@
             <path>
               <item name="HoiAnHistoricSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="HoiAnHistoricSite" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoiAnHistoricSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoiAnHistoricSite" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoiAnHistoricSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoiAnHistoricSite" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoiAnHistoricSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoiAnHistoricSite" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HoiAnHistoricSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="HoiAnHistoricSite" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoiAnHistoricSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoiAnHistoricSite" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="show" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,10 +343,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34990000" />
+    <option name="totallyTimeSpent" value="36867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -322,6 +381,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.3293718" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.65704584" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -367,10 +427,29 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/includes/auth/header.php">
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2267" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scss/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="95" column="83" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
+          <caret line="1592" column="13" selection-start-line="1592" selection-start-column="13" selection-end-line="1592" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/authentication/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/includes/public/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -385,6 +464,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/authentication/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="116" lean-forward="true" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
         </state>
       </provider>
     </entry>
@@ -414,10 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/contact.php">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="102">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -446,13 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -499,17 +578,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/historic_site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="191" column="71" lean-forward="true" selection-start-line="191" selection-start-column="71" selection-end-line="191" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/includes/auth/left_panel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/historic_site/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
@@ -534,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/authentication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -548,164 +620,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/historic_site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="86" column="62" lean-forward="true" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/historic_site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        <state relative-caret-position="240">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/includes/public/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="19" column="97" selection-start-line="19" selection-start-column="97" selection-end-line="19" selection-end-column="97" />
+        <state relative-caret-position="40">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/includes/public/footer.php">
+    <entry file="file://$PROJECT_DIR$/models/category_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="240">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/hero_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/hero_2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/img_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/img_5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/logo2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/placeholder.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/round.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/authentication/login.php">
+    <entry file="file://$PROJECT_DIR$/controllers/authentication.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+        <state relative-caret-position="-200">
+          <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/authentication/register.php">
+    <entry file="file://$PROJECT_DIR$/controllers/mError.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300" />
+        <state relative-caret-position="180">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/slides_model.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper/function_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/error/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="440" column="51" selection-start-line="440" selection-start-column="51" selection-end-line="440" selection-end-column="51" />
+        <state relative-caret-position="100">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/includes/auth/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="100">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="116" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/slides/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/includes/auth/script.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="60">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/includes/public/script.php">
+    <entry file="file://$PROJECT_DIR$/views/historic_site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="2500">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/includes/public/head.php">
+    <entry file="file://$PROJECT_DIR$/views/includes/auth/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="1800">
+          <caret line="90" column="83" selection-start-line="90" selection-start-column="83" selection-end-line="90" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/controllers/historic_site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/historic_site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="138" column="77" selection-start-line="138" selection-start-column="77" selection-end-line="138" selection-end-column="77" />
+        <state relative-caret-position="480">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#396#2603#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.php">
+    <entry file="file://$PROJECT_DIR$/controllers/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
+        <state relative-caret-position="-220">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/contact.php">
+    <entry file="file://$PROJECT_DIR$/views/historic_site/create.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/slides/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="98">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/slides.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/show/historic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/paths.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="40">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/show/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

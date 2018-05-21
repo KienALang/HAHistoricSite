@@ -1,6 +1,11 @@
 <!doctype html>
 <head>
+    <title><?= BRAND_NAME ?> | Admin</title>
     <?php require 'views/includes/auth/head.php' ?>
+    <link rel="stylesheet" href="<?= URL ?>public/scss/style.css">
+    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!-- Left Panel -->

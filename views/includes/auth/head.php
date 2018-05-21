@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="shortcut icon" href="<?= URL; ?>favicon.ico">
-
 <link rel="stylesheet" href="<?= CSS; ?>normalize.css">
 <link rel="stylesheet" href="<?= CSS; ?>bootstrap.min.css">
 <link rel="stylesheet" href="<?= FONTS; ?>fontawesome/css/font-awesome.min.css">

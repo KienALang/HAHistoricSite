@@ -1,12 +1,7 @@
 <!doctype html>
 <head>
-    <title><?= BRAND_NAME ?>|Bài Đăng</title>
-    <?php require 'views/includes/auth/head.php' ?>
-    <link rel="stylesheet" href="<?= URL ?>public/scss/style.css">
-    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-
+   <?php require 'views/includes/auth/head.php' ?>
+   <title>Thêm bài đăng</title>
 </head>
 <body>
 <!-- Left Panel -->
@@ -47,42 +42,38 @@
     <div class="content mt-3">
         <div class="animated fadeIn">
             <div class="row">
+
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Di tích</strong>
+                            <strong class="card-title">Chỉnh sửa Slide</strong>
                         </div>
-                        <?php if (isset($_GET['msg'])) { ?>
+                        <?php if ($success !== "") { ?>
                             <div class="alert alert-success">
-                                Thêm bài đăng thành công!
+                                <?php echo $success ?>
                             </div>
                         <?php } ?>
-                        <div class="card-body">
-                            <table id="bootstrap-data-table" class="table table-striped table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Tên</th>
-                                    <th>Hình Ảnh</th>
-                                    <th>Thời gian tạo</th>
-                                    <th>Tên Loại</th>
-                                    <th>Số lượng View</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <?php foreach ($hs as $item) { ?>
-                                    <tr>
-                                        <td><?php echo $item['hs_id'] ?></td>
-                                        <td><?php echo $item['hs_name'] ?></td>
-                                        <td><?php echo $item['hs_image'] ?></td>
-                                        <td><?php echo $item['create_time'] ?></td>
-                                        <td><?php echo $item['cate_name'] ?></td>
-                                        <td><?php echo $item['hs_view_count'] ?></td>
-                                    </tr>
+                        <div class="card-body col-md-9">
+                            
+                            <form name="create-form" action="" method="POST" enctype="multipart/form-data" id="create-form">
+                                <a href="<?php echo URL.'slides' ?>" class="btn btn-primary">Trở về</a>
+                                <br /> <br />
+                                <label>Tên Slide (*) </label>
+                                <input type="text" name="name" class="form-control" value="<?php if (isset($slide['name'])) echo $slide['name']?>">
+                              
+                                <?php if ($errorImage !== "") { ?>
+                                <div class="alert alert-danger">
+                                    <?php echo $errorImage ?>
+                                </div>
                                 <?php } ?>
+                                <label>Hình ảnh (*) </label>
+                                <img src="<?php echo URL.'upload/slides/'.$slide['image'] ?>" alt="<?php echo $slide['name']?>">
+                                <input type="file" name="image" class="form-control">
+                                <br />
 
-                                </tbody>
-                            </table>
+
+                                <input type="submit" name="submit" value="Chỉnh sửa slide" class="btn btn-primary">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -92,14 +83,11 @@
         </div><!-- .animated -->
     </div><!-- .content -->
 
-
 </div><!-- /#right-panel -->
 
 <!-- Right Panel -->
 
-
 <?php require 'views/includes/auth/script.php' ?>
-
 
 <script src="<?php echo URL; ?>public/auth_js/lib/data-table/datatables.min.js"></script>
 <script src="<?php echo URL; ?>public/auth_js/lib/data-table/dataTables.bootstrap.min.js"></script>

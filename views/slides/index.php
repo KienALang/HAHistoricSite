@@ -1,12 +1,11 @@
 <!doctype html>
 <head>
-    <title><?= BRAND_NAME ?>|Bài Đăng</title>
+    <title><?= BRAND_NAME ?> | Slides Show</title>
     <?php require 'views/includes/auth/head.php' ?>
     <link rel="stylesheet" href="<?= URL ?>public/scss/style.css">
     <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-
 </head>
 <body>
 <!-- Left Panel -->
@@ -36,8 +35,7 @@
                 <div class="page-title">
                     <ol class="breadcrumb text-right">
                         <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Table</a></li>
-                        <li class="active">Data table</li>
+                        <li class="active"><a href="#">Slides show</a></li>
                     </ol>
                 </div>
             </div>
@@ -50,11 +48,17 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Di tích</strong>
+                            <strong class="card-title">Slide ( Quản lý hình ảnh giới thiệu trang chủ )</strong>
                         </div>
+                        <br/>
+                        <div class="col-md-3">
+                            <a href="<?php echo URL . 'slides/create' ?>" class="btn btn-primary">Thêm mới Slide</a>
+                        </div>
+                        <br/> <br/>
                         <?php if (isset($_GET['msg'])) { ?>
                             <div class="alert alert-success">
-                                Thêm bài đăng thành công!
+                                <?php if ($_GET['msg'] == 1) echo "Thêm Slide thành công"; ?>
+                                <?php if ($_GET['msg'] == 2) echo "Xóa Slide thành công"; ?>
                             </div>
                         <?php } ?>
                         <div class="card-body">
@@ -63,21 +67,31 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Tên</th>
-                                    <th>Hình Ảnh</th>
-                                    <th>Thời gian tạo</th>
-                                    <th>Tên Loại</th>
-                                    <th>Số lượng View</th>
+                                    <th width="60%">Hình Ảnh</th>
+                                    <th width="20%%">Chức năng</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($hs as $item) { ?>
+                                <?php foreach ($slides as $slide) { ?>
                                     <tr>
-                                        <td><?php echo $item['hs_id'] ?></td>
-                                        <td><?php echo $item['hs_name'] ?></td>
-                                        <td><?php echo $item['hs_image'] ?></td>
-                                        <td><?php echo $item['create_time'] ?></td>
-                                        <td><?php echo $item['cate_name'] ?></td>
-                                        <td><?php echo $item['hs_view_count'] ?></td>
+                                        <td><?php echo $slide['id'] ?></td>
+                                        <td><?php echo $slide['name'] ?></td>
+                                        <td class="image-admin">
+                                            <img src="<?php echo URL . 'upload/slides/' . $slide['image'] ?>"
+                                                 alt="<?php echo $slide['name'] ?>">
+                                        </td>
+                                        <td>
+                                            <div class="btn btn-primary">
+                                                <i class="fa fa-edit"></i><a
+                                                        href="<?php echo URL . 'slides/edit?id=' . $slide['id']; ?>">
+                                                    Sửa</a>
+                                            </div>
+                                            <div class="btn btn-danger">
+                                                <i class="fa fa-remove"></i><a
+                                                        onclick="return confirm('Bạn có thật sự muốn xóa?');"
+                                                        href="<?php echo URL . 'slides/del?id=' . $slide['id']; ?>">Xóa</a>
+                                            </div>
+                                        </td>
                                     </tr>
                                 <?php } ?>
 

@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4 site-logo" data-aos="fade"><a href="index.php"><em>Khu Di Tích Hội An</em></a></div>
+            <div class="col-4 site-logo" data-aos="fade"><a href="<?php echo URL; ?>index"><em>Khu Di Tích Hội An</em></a></div>
             <div class="col-8">
                 <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
                     <span></span>
