@@ -18,7 +18,7 @@
                 <h3 class="menu-title">Menu</h3><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Di Tích</a>
+                       aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Bài Đăng</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-puzzle-piece"></i><a href="<?= URL; ?>historic_site">Xem Toàn Bộ</a></li>
                         <li><i class="fa fa-plus"></i><a href="<?= URL; ?>historic_site/create">Thêm Mới</a></li>
@@ -32,6 +32,10 @@
                         <li><i class="fa fa-puzzle-piece"></i><a href="<?= URL; ?>slides">Xem Danh sách</a></li>
                         <li><i class="fa fa-plus"></i><a href="<?= URL; ?>slides/create">Thêm Mới</a></li>
                     </ul>
+                </li>
+
+                <li>
+                    <a href="<?= URL; ?>category"> <i class="menu-icon fa fa-address-card"></i>Loại bài viết </a>
                 </li>
 
                 <h3 class="menu-title">Thống kê</h3><!-- /.menu-title -->

@@ -14,7 +14,7 @@
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay" style='background-image: url("assets/public/img/hero_1.jpg")'>
+<section class="site-hero overlay" style='background-image: url("<?= URL ?>assets/public/img/hero_1.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
@@ -41,7 +41,7 @@
             <?php foreach ($categories as $category) { ?>
                 <div class="col-lg-3 col-md-6 visit mb-3 historic-category" data-aos="fade-right">
                     <a href="<?= URL; ?>show/category?id=<?= $category['cate_id'] ?>">
-                        <img src="assets/public/img/img_1.jpg" alt="<?= $category['cate_name'] ?>"
+                        <img src="<?= URL . $category['cate_image'] ?>" alt="<?= $category['cate_name'] ?>"
                              class="img-fluid">
                     </a>
                     <h3>
@@ -65,10 +65,10 @@
                 <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="100">
                     <a href="<?= URL; ?>show/historic?id=<?= $item['hs_id'] ?>">
                         <?php if ($item['hs_image'] != NULL) { ?>
-                            <img src="<?= UPLOAD_IMAGES . $item['hs_image']; ?>"
+                            <img src="<?= URL . $item['hs_image']; ?>"
                                  class="img-fluid">
                         <?php } else { ?>
-                            <img src="assets/public/img/default.jpg" class="img-fluid">
+                            <img src="<?= URL ?>assets/public/img/default.jpg" class="img-fluid">
                         <?php } ?>
                     </a>
                     <h3>
@@ -131,7 +131,7 @@
                                 <img src="<?= URL; ?>upload/images/<?= $item['hs_image'] ?>"
                                      class="img-fluid">
                             <?php } else { ?>
-                                <img src="assets/public/img/default.jpg" class="img-fluid">
+                                <img src="<?= URL ?>assets/public/img/default.jpg" class="img-fluid">
                             <?php } ?>
                         </a>
                         <div class="media-body">
@@ -160,7 +160,8 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="assets/public/img/person_1.jpg" alt="Image placeholder" class="rounded-circle">
+                        <img src="<?= URL ?>assets/public/img/person_1.jpg" alt="Image placeholder"
+                             class="rounded-circle">
                     </div>
                     <blockquote>
 
@@ -176,7 +177,8 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="assets/public/img/person_2.jpg" alt="Image placeholder" class="rounded-circle">
+                        <img src="<?= URL ?>assets/public/img/person_2.jpg" alt="Image placeholder"
+                             class="rounded-circle">
                     </div>
                     <blockquote>
                         <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, iusto doloremque
@@ -191,7 +193,8 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="assets/public/img/person_3.jpg" alt="Image placeholder" class="rounded-circle">
+                        <img src="<?= URL ?>assets/public/img/person_3.jpg" alt="Image placeholder"
+                             class="rounded-circle">
                     </div>
                     <blockquote>
 

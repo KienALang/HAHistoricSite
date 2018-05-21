@@ -5,8 +5,8 @@
     <title><?= BRAND_NAME ?> | Bài Đăng</title>
     <?php require 'views/includes/auth/base_css.php'; ?>
 
-    <link rel="stylesheet" href="assets/auth/scss/style.css">
-    <link rel="stylesheet" href="assets/auth/css/lib/datatable/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/auth/scss/style.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/auth/css/lib/datatable/dataTables.bootstrap.min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
@@ -65,6 +65,7 @@
                                     <th>Thời gian tạo</th>
                                     <th>Tên Loại</th>
                                     <th>Số lượng View</th>
+                                    <th>Xử lý</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -72,10 +73,16 @@
                                     <tr>
                                         <td><?= $item['hs_id'] ?></td>
                                         <td><?= $item['hs_name'] ?></td>
-                                        <td><?= $item['hs_image'] ?></td>
+                                        <td><img src="<?= URL. $item['hs_image'] ?>" alt="<?= $item['hs_name'] ?>"/></td>
                                         <td><?= $item['create_time'] ?></td>
                                         <td><?= $item['cate_name'] ?></td>
                                         <td><?= $item['hs_view_count'] ?></td>
+                                        <td>
+                                            <a href="<?= URL ?>historic_site/viewUpdateForm/<?= $item['hs_id'] ?>"
+                                               style="color: #2a62bc;"><i class="fa fa-external-link"></i></a>
+                                            <a href="<?= URL ?>historic_site/delete/<?= $item['hs_id'] ?>"
+                                               style="color: red;"><i class="fa fa-trash-o"></i></a>
+                                        </td>
                                     </tr>
                                 <?php } ?>
 
@@ -99,17 +106,17 @@
 <?php require 'views/includes/auth/base_script.php' ?>
 
 
-<script src="assets/auth/js/lib/data-table/datatables.min.js"></script>
-<script src="assets/auth/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-<script src="assets/auth/js/lib/data-table/dataTables.buttons.min.js"></script>
-<script src="assets/auth/js/lib/data-table/buttons.bootstrap.min.js"></script>
-<script src="assets/auth/js/lib/data-table/jszip.min.js"></script>
-<script src="assets/auth/js/lib/data-table/pdfmake.min.js"></script>
-<script src="assets/auth/js/lib/data-table/vfs_fonts.js"></script>
-<script src="assets/auth/js/lib/data-table/buttons.html5.min.js"></script>
-<script src="assets/auth/js/lib/data-table/buttons.print.min.js"></script>
-<script src="assets/auth/js/lib/data-table/buttons.colVis.min.js"></script>
-<script src="assets/auth/js/lib/data-table/datatables-init.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/datatables.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/dataTables.buttons.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/buttons.bootstrap.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/jszip.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/pdfmake.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/vfs_fonts.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/buttons.html5.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/buttons.print.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/buttons.colVis.min.js"></script>
+<script src="<?= URL; ?>assets/auth/js/lib/data-table/datatables-init.js"></script>
 
 
 <script type="text/javascript">

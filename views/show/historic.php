@@ -13,7 +13,7 @@
 <?php require 'views/includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay" style='background-image: url("<?= URL; ?>public/images/hero_1.jpg")'>
+<section class="site-hero overlay" style='background-image: url("<?= URL ?>assets/public/img/hero_1.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
@@ -43,10 +43,10 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <?php if ($hs['hs_image'] != NULL) { ?>
-                            <img data-aos="fade-up" src="<?= URL; ?>upload/images/<?= $hs['hs_image'] ?>"
+                            <img data-aos="fade-up" src="<?= URL . $hs['hs_image'] ?>"
                                  class="img-fluid">
                         <?php } else { ?>
-                            <img data-aos="fade-up" src="<?= URL; ?>public/images/default.jpg" class="img-fluid">
+                            <img data-aos="fade-up" src="<?= URL; ?>assets/public/img/default.jpg" class="img-fluid">
                         <?php } ?>
                     </div>
 
