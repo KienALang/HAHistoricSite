@@ -1,18 +1,20 @@
 <!doctype html>
 <html lang="vi">
 <head>
-    <title>Khu Di Tích Hội An | Trang chủ</title>
-    <?php require 'includes/public/head.php' ?>
+    <title><?= BRAND_NAME ?> | Trang Chủ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <?php require 'views/includes/public/base_css.php'; ?>
 
     <!-- Theme Style -->
-    <link rel="stylesheet" href="<?= CSS; ?>style.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/public/css/style.css">
 </head>
 <body>
 
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay" style='background-image: url("<?= IMAGES; ?>hero_1.jpg")'>
+<section class="site-hero overlay" style='background-image: url("assets/public/img/hero_1.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
@@ -39,7 +41,7 @@
             <?php foreach ($categories as $category) { ?>
                 <div class="col-lg-3 col-md-6 visit mb-3 historic-category" data-aos="fade-right">
                     <a href="<?= URL; ?>show/category?id=<?= $category['cate_id'] ?>">
-                        <img src="<?= IMAGES; ?>img_1.jpg" alt="<?= $category['cate_name'] ?>"
+                        <img src="assets/public/img/img_1.jpg" alt="<?= $category['cate_name'] ?>"
                              class="img-fluid">
                     </a>
                     <h3>
@@ -66,7 +68,7 @@
                             <img src="<?= UPLOAD_IMAGES . $item['hs_image']; ?>"
                                  class="img-fluid">
                         <?php } else { ?>
-                            <img src="<?= IMAGES; ?>default.jpg" class="img-fluid">
+                            <img src="assets/public/img/default.jpg" class="img-fluid">
                         <?php } ?>
                     </a>
                     <h3>
@@ -129,7 +131,7 @@
                                 <img src="<?= URL; ?>upload/images/<?= $item['hs_image'] ?>"
                                      class="img-fluid">
                             <?php } else { ?>
-                                <img src="<?= IMAGES; ?>default.jpg" class="img-fluid">
+                                <img src="assets/public/img/default.jpg" class="img-fluid">
                             <?php } ?>
                         </a>
                         <div class="media-body">
@@ -158,7 +160,7 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="<?= IMAGES; ?>person_1.jpg" alt="Image placeholder" class="rounded-circle">
+                        <img src="assets/public/img/person_1.jpg" alt="Image placeholder" class="rounded-circle">
                     </div>
                     <blockquote>
 
@@ -174,7 +176,7 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="<?= IMAGES; ?>person_2.jpg" alt="Image placeholder" class="rounded-circle">
+                        <img src="assets/public/img/person_2.jpg" alt="Image placeholder" class="rounded-circle">
                     </div>
                     <blockquote>
                         <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, iusto doloremque
@@ -189,7 +191,7 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="<?= IMAGES; ?>person_3.jpg" alt="Image placeholder" class="rounded-circle">
+                        <img src="assets/public/img/person_3.jpg" alt="Image placeholder" class="rounded-circle">
                     </div>
                     <blockquote>
 
@@ -208,6 +210,6 @@
 
 <?php require 'includes/public/footer.php' ?>
 
-<?php require 'includes/public/script.php' ?>
+<?php require 'views/includes/public/base_script.php'; ?>
 </body>
 </html>

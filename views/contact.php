@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="vi">
 <head>
-    <title>Khu Di Tích Hội An | Liên hệ</title>
-    <?php require 'includes/public/head.php' ?>
+    <title><?= BRAND_NAME ?> | Liên lạc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <?php require 'views/includes/public/base_css.php'; ?>
+
     <!-- Theme Style -->
-    <link rel="stylesheet" href="<?= URL; ?>public/css/style.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/public/css/style.css">
 </head>
 <body>
 
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay page-inside" style='background-image: url("<?= IMAGES; ?>hero_2.jpg")'>
+<section class="site-hero overlay page-inside" style='background-image: url("<?= URL; ?>assets/public/img/hero_2.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
@@ -78,6 +81,6 @@
 
 <?php require 'includes/public/footer.php' ?>
 
-<?php require 'includes/public/script.php' ?>
+<?php require 'includes/public/base_script.php' ?>
 </body>
 </html>

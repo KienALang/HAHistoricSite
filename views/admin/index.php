@@ -1,17 +1,21 @@
 <!doctype html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= BRAND_NAME ?> | Admin</title>
-    <?php require 'views/includes/auth/head.php' ?>
-    <link rel="stylesheet" href="<?= URL ?>public/scss/style.css">
-    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+    <?php require 'views/includes/auth/base_css.php'; ?>
+
+    <link rel="stylesheet" href="<?= URL ?>assets/auth/scss/style.css">
+    <link href="<?= URL ?>assets/auth/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
+
+
 <!-- Left Panel -->
-
 <?php require 'views/includes/auth/left_panel.php' ?>
-
 <!-- Left Panel -->
 
 <!-- Right Panel -->
@@ -338,7 +342,7 @@
                     <div class="media">
                         <a href="#">
                             <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt=""
-                                 src="<?php echo URL; ?>images/admin.jpg">
+                                 src="<?= URL ?>assets/auth/images/admin.jpg">
                         </a>
                         <div class="media-body">
                             <h2 class="text-white display-6">Jim Doe</h2>
@@ -439,15 +443,16 @@
 
 <!-- Right Panel -->
 
-<?php require 'views/includes/auth/script.php' ?>
 
-<script src="<?php echo URL; ?>assets/js/lib/chart-js/Chart.bundle.js"></script>
-<script src="<?php echo URL; ?>assets/js/dashboard.js"></script>
-<script src="<?php echo URL; ?>assets/js/widgets.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/jquery.vmap.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/jquery.vmap.min.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
-<script src="<?php echo URL; ?>assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+<?php require 'views/includes/auth/base_script.php' ?>
+
+<script src="<?= URL ?>assets/auth/js/lib/chart-js/Chart.bundle.js"></script>
+<script src="<?= URL ?>assets/auth/js/dashboard.js"></script>
+<script src="<?= URL ?>assets/auth/js/widgets.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/vector-map/jquery.vmap.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/vector-map/jquery.vmap.min.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/vector-map/country/jquery.vmap.world.js"></script>
 <script>
     (function ($) {
         "use strict";

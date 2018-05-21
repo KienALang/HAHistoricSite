@@ -1,6 +1,12 @@
 <!doctype html>
 <head>
-    <?php require 'views/includes/auth/head.php' ?>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?= BRAND_NAME ?> | Biểu Đồ</title>
+    <?php require 'views/includes/auth/base_css.php'; ?>
+
+    <link rel="stylesheet" href="<?= URL ?>assets/auth/scss/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -94,19 +100,19 @@
 
 <!-- Right Panel -->
 
-<?php require 'views/includes/auth/script.php' ?>
+<?php require 'views/includes/auth/base_script.php' ?>
 
 <!--  flot-chart js -->
-<script src="assets/js/lib/flot-chart/excanvas.min.js"></script>
-<script src="assets/js/lib/flot-chart/jquery.flot.js"></script>
-<script src="assets/js/lib/flot-chart/jquery.flot.pie.js"></script>
-<script src="assets/js/lib/flot-chart/jquery.flot.time.js"></script>
-<script src="assets/js/lib/flot-chart/jquery.flot.stack.js"></script>
-<script src="assets/js/lib/flot-chart/jquery.flot.resize.js"></script>
-<script src="assets/js/lib/flot-chart/jquery.flot.crosshair.js"></script>
-<script src="assets/js/lib/flot-chart/curvedLines.js"></script>
-<script src="assets/js/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js"></script>
-<script src="assets/js/lib/flot-chart/flot-chart-init.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/excanvas.min.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/jquery.flot.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/jquery.flot.pie.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/jquery.flot.time.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/jquery.flot.stack.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/jquery.flot.resize.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/jquery.flot.crosshair.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/curvedLines.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+<script src="<?= URL ?>assets/auth/js/lib/flot-chart/flot-chart-init.js"></script>
 
 </body>
 </html>

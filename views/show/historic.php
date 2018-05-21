@@ -3,10 +3,10 @@
 <html lang="vi">
 <head>
     <title><?= BRAND_NAME ?> | Chi tiết</title>
-    <?php require 'views/includes/public/head.php'; ?>
+    <?php require 'views/includes/public/base_css.php'; ?>
 
     <!-- Theme Style -->
-    <link rel="stylesheet" href="<?= CSS; ?>style.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/public/css/style.css">
 </head>
 <body>
 
@@ -70,6 +70,6 @@
 
 <?php require 'views/includes/public/footer.php' ?>
 
-<?php require 'views/includes/public/script.php' ?>
+<?php require 'views/includes/public/base_script.php' ?>
 </body>
 </html>

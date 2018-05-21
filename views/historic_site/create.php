@@ -1,23 +1,21 @@
 <!doctype html>
 <head>
-    <title><?= BRAND_NAME ?> | Thêm Bài Đăng</title>
-    <?php require 'views/includes/auth/head.php' ?>
-    <link rel="stylesheet" href="<?= URL ?>public/scss/style.css">
-    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?= BRAND_NAME ?> | Tạo Bài Đăng</title>
+    <?php require 'views/includes/auth/base_css.php'; ?>
 
+    <link rel="stylesheet" href="<?= URL ?>assets/auth/scss/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <!-- CK Editor plugins -->
     <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
 </head>
 <body>
 <!-- Left Panel -->
-
 <?php require 'views/includes/auth/left_panel.php' ?>
-
 <!-- Left Panel -->
 
 <!-- Right Panel -->
-
 <div id="right-panel" class="right-panel">
 
     <!-- Header-->
@@ -54,7 +52,7 @@
                             <strong class="card-title">Tạo Bài Đăng Mới</strong>
                         </div>
                         <div class="card-body">
-                            <form name="create-form" action="<?php echo URL; ?>historic_site/create" method="POST"
+                            <form name="create-form" action="<?= URL; ?>historic_site/create" method="POST"
                                   enctype="multipart/form-data" id="create-form">
                                 <div class="form-group">
                                     <label>Tên bài đăng (*) </label>
@@ -66,7 +64,7 @@
                                     <label>Danh mục (*) </label>
                                     <select name="cate_id" class="form-control">
                                         <?php foreach ($cats as $cat) { ?>
-                                            <option value="<?php echo $cat['cate_id'] ?>"><?php echo $cat['cate_name'] ?></option>
+                                            <option value="<?= $cat['cate_id'] ?>"><?= $cat['cate_name'] ?></option>
                                         <?php } ?>
                                     </select>
                                 </div>
@@ -86,7 +84,7 @@
                                 <div class="form-group">
                                     <?php if ($errorImage !== "") { ?>
                                         <div class="alert alert-danger">
-                                            <?php echo $errorImage ?>
+                                            <?= $errorImage ?>
                                         </div>
                                     <?php } ?>
                                     <label>Hình ảnh (*) </label>
@@ -95,7 +93,7 @@
                                 <div class="form-group">
                                     <?php if ($errorPdf !== "") { ?>
                                         <div class="alert alert-danger">
-                                            <?php echo $errorPdf ?>
+                                            <?= $errorPdf ?>
                                         </div>
                                     <?php } ?>
                                     <label>File PDF</label>
@@ -119,7 +117,6 @@
 
 <!-- Right Panel -->
 
-
-<?php require 'views/includes/auth/script.php' ?>
+<?php require 'views/includes/auth/base_script.php' ?>
 </body>
 </html>

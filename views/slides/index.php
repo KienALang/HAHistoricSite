@@ -1,17 +1,18 @@
 <!doctype html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= BRAND_NAME ?> | Slides Show</title>
-    <?php require 'views/includes/auth/head.php' ?>
-    <link rel="stylesheet" href="<?= URL ?>public/scss/style.css">
-    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+    <?php require 'views/includes/auth/base_css.php'; ?>
+
+    <link rel="stylesheet" href="<?= URL ?>assets/auth/scss/style.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/auth/css/lib/datatable/dataTables.bootstrap.min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!-- Left Panel -->
-
 <?php require 'views/includes/auth/left_panel.php' ?>
-
 <!-- Left Panel -->
 
 <!-- Right Panel -->
@@ -52,7 +53,7 @@
                         </div>
                         <br/>
                         <div class="col-md-3">
-                            <a href="<?php echo URL . 'slides/create' ?>" class="btn btn-primary">Thêm mới Slide</a>
+                            <a href="<?= URL . 'slides/create' ?>" class="btn btn-primary">Thêm mới Slide</a>
                         </div>
                         <br/> <br/>
                         <?php if (isset($_GET['msg'])) { ?>
@@ -74,22 +75,22 @@
                                 <tbody>
                                 <?php foreach ($slides as $slide) { ?>
                                     <tr>
-                                        <td><?php echo $slide['id'] ?></td>
-                                        <td><?php echo $slide['name'] ?></td>
+                                        <td><?= $slide['id'] ?></td>
+                                        <td><?= $slide['name'] ?></td>
                                         <td class="image-admin">
-                                            <img src="<?php echo URL . 'upload/slides/' . $slide['image'] ?>"
-                                                 alt="<?php echo $slide['name'] ?>">
+                                            <img src="<?= URL . 'upload/slides/' . $slide['image'] ?>"
+                                                 alt="<?= $slide['name'] ?>">
                                         </td>
                                         <td>
                                             <div class="btn btn-primary">
                                                 <i class="fa fa-edit"></i><a
-                                                        href="<?php echo URL . 'slides/edit?id=' . $slide['id']; ?>">
+                                                        href="<?= URL . 'slides/edit?id=' . $slide['id']; ?>">
                                                     Sửa</a>
                                             </div>
                                             <div class="btn btn-danger">
                                                 <i class="fa fa-remove"></i><a
                                                         onclick="return confirm('Bạn có thật sự muốn xóa?');"
-                                                        href="<?php echo URL . 'slides/del?id=' . $slide['id']; ?>">Xóa</a>
+                                                        href="<?= URL . 'slides/del?id=' . $slide['id']; ?>">Xóa</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -112,20 +113,20 @@
 <!-- Right Panel -->
 
 
-<?php require 'views/includes/auth/script.php' ?>
+<?php require 'views/includes/auth/base_script.php' ?>
 
 
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/datatables.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/dataTables.bootstrap.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/dataTables.buttons.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/buttons.bootstrap.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/jszip.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/pdfmake.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/vfs_fonts.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/buttons.html5.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/buttons.print.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/buttons.colVis.min.js"></script>
-<script src="<?php echo URL; ?>public/auth_js/lib/data-table/datatables-init.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/datatables.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/dataTables.bootstrap.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/dataTables.buttons.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/buttons.bootstrap.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/jszip.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/pdfmake.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/vfs_fonts.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/buttons.html5.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/buttons.print.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/buttons.colVis.min.js"></script>
+<script src="<?= URL; ?>public/auth_js/lib/data-table/datatables-init.js"></script>
 
 
 <script type="text/javascript">

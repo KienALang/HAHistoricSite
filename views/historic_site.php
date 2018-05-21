@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="vi">
 <head>
-    <title>Khu Di Tích Hội An | Giới thiệu khu di tích</title>
-    <?php require 'includes/public/head.php' ?>
+    <title><?= BRAND_NAME ?> | Khu Di Tích</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <?php require 'views/includes/public/base_css.php'; ?>
+
     <!-- Theme Style -->
-    <link rel="stylesheet" href="<?= CSS; ?>style.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/public/css/style.css">
 </head>
 <body>
 

@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-    <?php require 'views/public/head.php' ?>
+    <?php require 'views/public/base_css.php' ?>
 </head>
 <body class="bg-dark">
 <div class="sufee-login d-flex align-content-center flex-wrap">
@@ -49,12 +49,5 @@
         </div>
     </div>
 </div>
-
-<script src="/public/js/jquery-3.2.1.min.js"></script>
-<script src="/public/js/popper.min.js"></script>
-<script src="/public/auth_js/plugins.js"></script>
-<script src="/public/auth_js/main.js"></script>
-
-
 </body>
 </html>

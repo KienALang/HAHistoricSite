@@ -1,5 +1,4 @@
 <header id="header" class="header">
-
     <div class="header-menu">
         <div class="col-sm-7">
             <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
@@ -46,7 +45,7 @@
                         <p class="red">Bạn có 4 bình luận mới</p>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?= IMAGES; ?>avatar/1.jpg"></span>
+                                                                src="<?= URL ?>assets/auth/images/avatar/1.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Jonathan Smith</span>
                                     <span class="time float-right">Just now</span>
@@ -55,7 +54,7 @@
                         </a>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?= IMAGES; ?>avatar/2.jpg"></span>
+                                                                src="<?= URL ?>assets/auth/images/avatar/2.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Jack Sanders</span>
                                     <span class="time float-right">5 minutes ago</span>
@@ -64,7 +63,7 @@
                         </a>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?= IMAGES; ?>avatar/3.jpg"></span>
+                                                                src="<?= URL ?>assets/auth/images/avatar/3.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Cheryl Wheeler</span>
                                     <span class="time float-right">10 minutes ago</span>
@@ -73,7 +72,7 @@
                         </a>
                         <a class="dropdown-item media" href="#">
                             <span class="photo media-left"><img alt="avatar"
-                                                                src="<?= IMAGES; ?>avatar/4.jpg"></span>
+                                                                src="<?= URL ?>assets/auth/images/avatar/4.jpg"></span>
                             <span class="message media-body">
                                     <span class="name float-left">Rachel Santos</span>
                                     <span class="time float-right">15 minutes ago</span>
@@ -88,7 +87,7 @@
         <div class="col-sm-5">
             <div class="user-area dropdown float-right">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="user-avatar rounded-circle" src="<?= IMAGES; ?>admin.jpg" alt="User Avatar">
+                    <img class="user-avatar rounded-circle" src="<?= URL ?>assets/auth/images/admin.jpg" alt="User Avatar">
                 </a>
 
                 <div class="user-menu dropdown-menu">
@@ -99,22 +98,6 @@
                     <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Đăng Xuất</a>
                 </div>
             </div>
-
-            <div class="language-select dropdown" id="language-select">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="language" aria-haspopup="true"
-                   aria-expanded="true">
-                    <i class="flag-icon flag-icon-us"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="language">
-                    <div class="dropdown-item">
-                        <span class="flag-icon flag-icon-fr"></span>
-                    </div>
-                    <div class="dropdown-item">
-                        <i class="flag-icon flag-icon-us"></i>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 

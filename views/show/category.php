@@ -3,17 +3,17 @@
 <html lang="vi">
 <head>
     <title><?= BRAND_NAME ?> | Loại bài đăng</title>
-    <?php require 'views/includes/public/head.php'; ?>
+    <?php require 'views/includes/public/base_css.php'; ?>
 
     <!-- Theme Style -->
-    <link rel="stylesheet" href="<?= CSS; ?>style.css">
+    <link rel="stylesheet" href="<?= URL ?>assets/public/css/style.css">
 </head>
 <body>
 
 <?php require 'views/includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay" style='background-image: url("<?= IMAGES; ?>hero_1.jpg")'>
+<section class="site-hero overlay" style='background-image: url("<?= URL; ?>assets/public/img/hero_1.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
@@ -66,6 +66,6 @@
 
 <?php require 'views/includes/public/footer.php' ?>
 
-<?php require 'views/includes/public/script.php' ?>
+<?php require 'views/includes/public/base_script.php' ?>
 </body>
 </html>
