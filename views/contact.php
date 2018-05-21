@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="vi">
 <head>
+    <title>Khu Di Tích Hội An | Liên hệ</title>
     <?php require 'includes/public/head.php' ?>
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="<?= URL; ?>public/css/style.css">
 </head>
 <body>
 
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay page-inside" style="background-image: url(img/hero_2.jpg)">
+<section class="site-hero overlay page-inside" style='background-image: url("<?= IMAGES; ?>hero_2.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">

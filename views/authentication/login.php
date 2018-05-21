@@ -1,20 +1,26 @@
 <!doctype html>
 <head>
+    <title>Đăng nhập</title>
     <?php require 'views/includes/auth/head.php' ?>
+
+    <link rel="stylesheet" href="<?= URL; ?>public/scss/style.css">
+    <link href="<?= URL; ?>public/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body class="bg-dark">
 <div class="sufee-login d-flex align-content-center flex-wrap">
     <div class="container">
         <div class="login-content">
             <div class="login-logo">
-                <a href="<?php echo URL; ?>" class="display-4 text-white">
+                <a href="<?= URL; ?>" class="display-4 text-white">
                     Đăng nhập
                 </a>
             </div>
             <div class="login-form">
-                <form name="login" action="<?php echo URL; ?>authentication/login">
+                <form name="login" action="<?= URL; ?>authentication/login">
                     <div class="form-group">
-                        <label>Email address</label>
+                        <label>Email</label>
                         <input type="email" name="email" required class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
@@ -23,10 +29,10 @@
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> Remember Me
+                            <input type="checkbox"> Ghi nhớ đăng nhập
                         </label>
                         <label class="pull-right">
-                            <a href="#">Forgotten Password?</a>
+                            <a href="#">Quên mật khẩu?</a>
                         </label>
 
                     </div>
@@ -39,7 +45,7 @@
                         </div>
                     </div>
                     <div class="register-link m-t-15 text-center">
-                        <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
+                        <p>Chưa có tài khoản ? <a href="#"> Đăng ký ở đây</a></p>
                     </div>
                 </form>
             </div>
@@ -48,11 +54,6 @@
 </div>
 
 
-<script src="/public/js/jquery-3.2.1.min.js"></script>
-<script src="/public/js/popper.min.js"></script>
-<script src="/public/auth_js/plugins.js"></script>
-<script src="/public/auth_js/main.js"></script>
-
-
+<?php require 'views/includes/auth/script.php'; ?>
 </body>
 </html>

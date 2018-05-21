@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="vi">
 <head>
+    <title>Khu Di Tích Hội An | Giới thiệu khu di tích</title>
     <?php require 'includes/public/head.php' ?>
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="<?= CSS; ?>style.css">
 </head>
 <body>
 
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay page-inside" style='background-image: url("<?php echo URL; ?>public/img/hero_2.jpg")'>
+<section class="site-hero overlay page-inside" style='background-image: url("<?= IMAGES; ?>hero_2.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
@@ -22,7 +25,6 @@
 </section>
 <!-- END section -->
 
-
 <section class="section bg-light post">
     <div class="container">
         <div class="row">
@@ -30,7 +32,7 @@
                 <div class="row mb-5">
                     <div class="col-md-6">
                         <div class="media media-custom d-block mb-4">
-                            <a href="#" class="mb-4 d-block"><img src="img/img_1.jpg" alt="Image placeholder"
+                            <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_1.jpg" alt="Image placeholder"
                                                                   class="img-fluid"></a>
                             <div class="media-body">
                                 <span class="meta-post">February 26, 2018</span>
@@ -40,7 +42,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="media media-custom d-block mb-4">
-                            <a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+                            <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_2.jpg" alt="Image placeholder"
                                                                   class="img-fluid"></a>
                             <div class="media-body">
                                 <span class="meta-post">February 26, 2018</span>
@@ -52,7 +54,7 @@
 
                     <div class="col-md-6">
                         <div class="media media-custom d-block mb-4">
-                            <a href="#" class="mb-4 d-block"><img src="img/img_1.jpg" alt="Image placeholder"
+                            <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_1.jpg" alt="Image placeholder"
                                                                   class="img-fluid"></a>
                             <div class="media-body">
                                 <span class="meta-post">February 26, 2018</span>
@@ -62,7 +64,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="media media-custom d-block mb-4">
-                            <a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+                            <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_2.jpg" alt="Image placeholder"
                                                                   class="img-fluid"></a>
                             <div class="media-body">
                                 <span class="meta-post">February 26, 2018</span>
@@ -74,7 +76,7 @@
 
                     <div class="col-md-6">
                         <div class="media media-custom d-block mb-4">
-                            <a href="#" class="mb-4 d-block"><img src="img/img_1.jpg" alt="Image placeholder"
+                            <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_1.jpg" alt="Image placeholder"
                                                                   class="img-fluid"></a>
                             <div class="media-body">
                                 <span class="meta-post">February 26, 2018</span>
@@ -84,7 +86,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="media media-custom d-block mb-4">
-                            <a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+                            <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_2.jpg" alt="Image placeholder"
                                                                   class="img-fluid"></a>
                             <div class="media-body">
                                 <span class="meta-post">February 26, 2018</span>
@@ -133,7 +135,7 @@
                             <ul class="post-list list-unstyled">
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <span class="mr-3 image"><img src="img/img_1.jpg" alt="Image placeholder"
+                                        <span class="mr-3 image"><img src="<?= IMAGES; ?>img_1.jpg" alt="Image placeholder"
                                                                       class="img-fluid"></span>
                                         <div>
                                             <span class="meta">February 27, 2018</span>
@@ -143,7 +145,7 @@
                                 </li>
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <span class="mr-3 image"><img src="img/img_2.jpg" alt="Image placeholder"
+                                        <span class="mr-3 image"><img src="<?= IMAGES; ?>img_2.jpg" alt="Image placeholder"
                                                                       class="img-fluid"></span>
                                         <div>
                                             <span class="meta">February 27, 2018</span>
@@ -154,7 +156,7 @@
 
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <span class="mr-3 image"><img src="img/img_1.jpg" alt="Image placeholder"
+                                        <span class="mr-3 image"><img src="<?= IMAGES; ?>img_1.jpg" alt="Image placeholder"
                                                                       class="img-fluid"></span>
                                         <div>
                                             <span class="meta">February 27, 2018</span>
@@ -164,7 +166,7 @@
                                 </li>
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <span class="mr-3 image"><img src="img/img_2.jpg" alt="Image placeholder"
+                                        <span class="mr-3 image"><img src="<?= IMAGES; ?>img_2.jpg" alt="Image placeholder"
                                                                       class="img-fluid"></span>
                                         <div>
                                             <span class="meta">February 27, 2018</span>
@@ -174,7 +176,7 @@
                                 </li>
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <span class="mr-3 image"><img src="img/img_3.jpg" alt="Image placeholder"
+                                        <span class="mr-3 image"><img src="<?= IMAGES; ?>img_3.jpg" alt="Image placeholder"
                                                                       class="img-fluid"></span>
                                         <div>
                                             <span class="meta">February 27, 2018</span>

@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="vi">
 <head>
+    <title>Khu Di Tích Hội An | Trang chủ</title>
     <?php require 'includes/public/head.php' ?>
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="<?= CSS; ?>style.css">
 </head>
 <body>
 
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay" style='background-image: url("<?php echo URL; ?>public/img/hero_1.jpg")'>
+<section class="site-hero overlay" style='background-image: url("<?= IMAGES; ?>hero_1.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
-                <h1 class="heading" data-aos="fade-up"><em><?php echo BRAND_NAME ?></em>, Quảng Nam</h1>
+                <h1 class="heading" data-aos="fade-up"><em><?= BRAND_NAME ?></em>, Quảng Nam</h1>
                 <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">Trang web giới thiệu các khu di tích
                     ở TP Hội An, tỉnh Quảng Nam.</p>
                 <p data-aos="fade-up" data-aos-delay="100"><a href="#"
@@ -33,7 +37,7 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right">
-                <a href="restaurant.html"><img src="<?php echo URL; ?>public/img/img_1.jpg" alt="Image placeholder"
+                <a href="restaurant.html"><img src="<?= IMAGES; ?>img_1.jpg" alt="Image placeholder"
                                                class="img-fluid"> </a>
                 <h3><a href="restaurant.html">Food &amp; Wines</a></h3>
                 <div class="reviews-star float-left">
@@ -48,7 +52,7 @@
             </span>
             </div>
             <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="100">
-                <a href="restaurant.html"><img src="<?php echo URL; ?>public/img/img_2.jpg" alt="Image placeholder"
+                <a href="restaurant.html"><img src="<?= IMAGES; ?>img_2.jpg" alt="Image placeholder"
                                                class="img-fluid"> </a>
                 <h3><a href="restaurant.html">Resort &amp; Spa</a></h3>
                 <div class="reviews-star float-left">
@@ -63,7 +67,7 @@
             </span>
             </div>
             <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="200">
-                <a href="hotel.html"><img src="<?php echo URL; ?>public/img/img_4.jpg" alt="Image placeholder"
+                <a href="hotel.html"><img src="<?= IMAGES; ?>img_4.jpg" alt="Image placeholder"
                                           class="img-fluid"> </a>
                 <h3><a href="hotel.html">Hotel Rooms</a></h3>
                 <div class="reviews-star float-left">
@@ -78,7 +82,7 @@
             </span>
             </div>
             <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="300">
-                <a href="yacht.html"><img src="<?php echo URL; ?>public/img/img_5.jpg" alt="Image placeholder"
+                <a href="yacht.html"><img src="<?= IMAGES; ?>img_5.jpg" alt="Image placeholder"
                                           class="img-fluid"> </a>
                 <h3><a href="yacht.html">Yacht Club</a></h3>
                 <div class="reviews-star float-left">
@@ -110,22 +114,22 @@
             <div class="col-md-12">
                 <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/img/slider-1.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-1.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/img/slider-2.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-2.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/img/slider-3.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-3.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/img/slider-4.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-4.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/img/slider-5.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-5.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="<?php echo URL; ?>public/img/slider-6.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-6.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                 </div>
                 <!-- END slider -->
@@ -150,7 +154,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="<?php echo URL; ?>public/img/img_1.jpg"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_1.jpg"
                                                           alt="Image placeholder" class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">February 26, 2018</span>
@@ -161,7 +165,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="<?php echo URL; ?>public/img/img_2.jpg"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_2.jpg"
                                                           alt="Image placeholder" class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">February 26, 2018</span>
@@ -171,7 +175,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="<?php echo URL; ?>public/img/img_3.jpg"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>img_3.jpg"
                                                           alt="Image placeholder" class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">February 26, 2018</span>
@@ -195,7 +199,7 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="<?php echo URL; ?>public/img/person_1.jpg" alt="Image placeholder"
+                        <img src="<?= IMAGES; ?>person_1.jpg" alt="Image placeholder"
                              class="rounded-circle">
                     </div>
                     <blockquote>
@@ -212,7 +216,7 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="<?php echo URL; ?>public/img/person_2.jpg" alt="Image placeholder"
+                        <img src="<?= IMAGES; ?>person_2.jpg" alt="Image placeholder"
                              class="rounded-circle">
                     </div>
                     <blockquote>
@@ -228,7 +232,7 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="testimonial text-center">
                     <div class="author-image mb-3">
-                        <img src="<?php echo URL; ?>public/img/person_3.jpg" alt="Image placeholder"
+                        <img src="<?= IMAGES; ?>person_3.jpg" alt="Image placeholder"
                              class="rounded-circle">
                     </div>
                     <blockquote>

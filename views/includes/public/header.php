@@ -3,8 +3,6 @@
         <div class="row">
             <div class="col-4 site-logo" data-aos="fade"><a href="index.php"><em>Khu Di Tích Hội An</em></a></div>
             <div class="col-8">
-
-
                 <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
                     <span></span>
                     <span></span>
@@ -18,10 +16,10 @@
                             <div class="row full-height align-items-center">
                                 <div class="col-md-6">
                                     <ul class="list-unstyled menu">
-                                        <li class="active"><a href="<?php echo URL; ?>">Trang Chủ</a></li>
-                                        <li><a href="<?php echo URL; ?>historic_site">Các khu di tích</a></li>
-                                        <li><a href="<?php echo URL; ?>about">Về chúng tôi</a></li>
-                                        <li><a href="<?php echo URL; ?>contact">Liên hệ</a></li>
+                                        <li class="active"><a href="<?= URL; ?>">Trang Chủ</a></li>
+                                        <li><a href="<?= URL; ?>historic_site">Giới thiệu di tích</a></li>
+                                        <li><a href="<?= URL; ?>about">Về chúng tôi</a></li>
+                                        <li><a href="<?= URL; ?>contact">Liên hệ</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 extra-info">

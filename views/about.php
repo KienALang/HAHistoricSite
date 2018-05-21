@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="vi">
 <head>
+    <title>Khu Di Tích Hội An | Về chúng tôi</title>
     <?php require 'includes/public/head.php' ?>
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="<?= URL; ?>public/css/style.css">
 </head>
 <body>
 
 <?php require 'includes/public/header.php' ?>
 <!-- END head -->
 
-<section class="site-hero overlay page-inside" style="background-image: url(img/hero_2.jpg)">
+<section class="site-hero overlay page-inside" style='background-image: url("<?= IMAGES; ?>hero_2.jpg")'>
     <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
             <div class="col-md-10 text-center">
@@ -36,22 +40,22 @@
             <div class="col-md-12">
                 <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="slider-item">
-                        <img src="img/slider-1.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-1.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="img/slider-2.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-2.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="img/slider-3.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-3.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="img/slider-4.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-4.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="img/slider-5.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-5.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                     <div class="slider-item">
-                        <img src="img/slider-6.jpg" alt="Image placeholder" class="img-fluid">
+                        <img src="<?= IMAGES; ?>slider-6.jpg" alt="Image placeholder" class="img-fluid">
                     </div>
                 </div>
                 <!-- END slider -->
@@ -78,7 +82,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="img/person_3.jpg" alt="Image placeholder"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>person_3.jpg" alt="Image placeholder"
                                                           class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">CEO, Co-Founder</span>
@@ -89,7 +93,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="img/person_1.jpg" alt="Image placeholder"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>person_1.jpg" alt="Image placeholder"
                                                           class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">CTO, Co-Founder</span>
@@ -99,7 +103,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="img/person_2.jpg" alt="Image placeholder"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>person_2.jpg" alt="Image placeholder"
                                                           class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">Marketer, Co-Founder</span>
@@ -111,7 +115,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="img/person_3.jpg" alt="Image placeholder"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>person_3.jpg" alt="Image placeholder"
                                                           class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">CEO, Co-Founder</span>
@@ -122,7 +126,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="img/person_1.jpg" alt="Image placeholder"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>person_1.jpg" alt="Image placeholder"
                                                           class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">CTO, Co-Founder</span>
@@ -132,7 +136,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
                 <div class="media media-custom d-block mb-4">
-                    <a href="#" class="mb-4 d-block"><img src="img/person_2.jpg" alt="Image placeholder"
+                    <a href="#" class="mb-4 d-block"><img src="<?= IMAGES; ?>person_2.jpg" alt="Image placeholder"
                                                           class="img-fluid"></a>
                     <div class="media-body">
                         <span class="meta-post">Marketer, Co-Founder</span>
