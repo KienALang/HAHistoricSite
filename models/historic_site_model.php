@@ -66,4 +66,21 @@ class Historic_Site_Model extends Model
         return $stmt->execute(array_values ($hs));
     }
 
+    function getSearch($txtSearch)
+    {
+        $txtSearch = '%'.$txtSearch.'%';
+        $sql = "SELECT h.*, c.cate_name FROM historic_site AS h INNER JOIN category AS c ON h.cate_id = c.cate_id WHERE h.hs_name LIKE (?)";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute(array($txtSearch));
+        return $stmt->fetchAll();
+    }
+
+    function increaseView($id)
+    {
+        $sql = "UPDATE historic_site SET hs_view_count = hs_view_count + 1 WHERE hs_id = ?";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute(array($id));
+        return $stmt->rowCount();
+    }
+
 }

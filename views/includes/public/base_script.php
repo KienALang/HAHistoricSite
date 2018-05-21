@@ -4,3 +4,5 @@
 <script src="<?= URL ?>assets/public/js/owl.carousel.min.js"></script>
 <script src="<?= URL ?>assets/public/js/aos.js"></script>
 <script src="<?= URL ?>assets/public/js/main.js"></script>
+<script src="<?= URL ?>assets/public/js/jquery.validate.min.js"></script>
+<script src="<?= URL ?>assets/public/js/custom.js"></script>

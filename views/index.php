@@ -21,14 +21,30 @@
                 <h1 class="heading" data-aos="fade-up"><em><?= BRAND_NAME ?></em>, Quảng Nam</h1>
                 <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">Trang web giới thiệu các khu di tích
                     ở TP Hội An, tỉnh Quảng Nam.</p>
-                <p data-aos="fade-up" data-aos-delay="100"><a href="#"
-                                                              class="btn uppercase btn-primary mr-md-2 mr-0 mb-3 d-sm-inline d-block">Khám
-                        Phá</a></p>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <a href="javascript:;" id="href-discover" onClick=""
+                        class="btn uppercase btn-primary mr-md-2 mr-0 mb-3 d-sm-inline d-block">
+                        Khám Phá
+                    </a>
+                </p>
             </div>
         </div>
     </div>
 </section>
 <!-- END section -->
+
+<section class="panel-index">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <i style="display: none" id ="reset-value-search" class="fa fa-remove"></i>
+                <input id="search-data" class="form-control type="text" placeholder="  Tìm kiếm..." name="txtSearch">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="show-index">
 
 <section class="section visit-section">
     <div class="container">
@@ -207,7 +223,7 @@
         </div>
     </div>
 </section>
-
+</div>
 <?php require 'includes/public/footer.php' ?>
 
 <?php require 'views/includes/public/base_script.php'; ?>

@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?= BRAND_NAME ?> | Slides Show</title>
+    <title><?= BRAND_NAME ?> | Contact Show</title>
     <?php require 'views/includes/auth/base_css.php'; ?>
 
     <link rel="stylesheet" href="<?= URL ?>assets/auth/scss/style.css">
@@ -36,7 +36,7 @@
                 <div class="page-title">
                     <ol class="breadcrumb text-right">
                         <li><a href="#">Dashboard</a></li>
-                        <li class="active"><a href="#">Slides show</a></li>
+                        <li class="active"><a href="#">Contacts show</a></li>
                     </ol>
                 </div>
             </div>
@@ -49,53 +49,36 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Slide ( Quản lý hình ảnh giới thiệu trang chủ )</strong>
+                            <strong class="card-title">Contact</strong>
                         </div>
                         <br/>
-                        <div class="col-md-3">
-                            <a href="<?= URL . 'slides/create' ?>" class="btn btn-primary">Thêm mới Slide</a>
-                        </div>
+                        
                         <br/> <br/>
-                        <?php if (isset($_GET['msg'])) { ?>
-                            <div class="alert alert-success">
-                                <?php if ($_GET['msg'] == 1) echo "Thêm Slide thành công"; ?>
-                                <?php if ($_GET['msg'] == 2) echo "Xóa Slide thành công"; ?>
-                            </div>
-                        <?php } ?>
+                        
                         <div class="card-body">
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
-                                    <th>ID</th>
                                     <th>Tên</th>
-                                    <th width="60%">Hình Ảnh</th>
-                                    <th width="20%%">Chức năng</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Email</th>
+                                    <th>Lời nhắn</th>
+                                    <th>Chức năng</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($slides as $slide) { ?>
+                                <?php foreach ($contacts as $contact) { ?>
                                     <tr>
-                                        <td><?= $slide['id'] ?></td>
-                                        <td><?= $slide['name'] ?></td>
-                                        <td class="image-admin">
-                                            <img src="<?= URL . 'upload/slides/' . $slide['image'] ?>"
-                                                 alt="<?= $slide['name'] ?>">
-                                        </td>
+                                        <td><?php echo $contact['name'] ?></td>
+                                        <td><?php echo $contact['phone'] ?></td>
+                                        <td><?php echo $contact['email'] ?></td>
+                                        <td><?php echo $contact['message'] ?></td>
                                         <td>
-                                            <div class="btn btn-primary">
-                                                <i class="fa fa-edit"></i>
-                                                <a  class="btn-function-index"
-                                                    href="<?= URL . 'slides/edit?id=' . $slide['id']; ?>">
-                                                    Sửa
-                                                </a>
-                                            </div>
-                                            <div class="btn btn-danger">
-                                                <i class="fa fa-remove"></i>
-                                                <a  class="btn-function-index"
-                                                    onclick="return confirm('Bạn có thật sự muốn xóa?');"
-                                                    href="<?= URL . 'slides/del?id=' . $slide['id']; ?>">Xóa
-                                                 </a>
-                                            </div>
+                                            <?php if ($contact['status'] === "0") { ?>
+                                                <a id="contact-<?php echo $contact['id'] ?>" href="javascript:;" class="btn btn-danger contact-click" >Xem</a>
+                                            <?php } else { ?>
+                                                <a href="javascript:;" class="btn btn-success" >Đã xem</a>
+                                            <?php } ?>
                                         </td>
                                     </tr>
                                 <?php } ?>
@@ -119,6 +102,23 @@
 
 <?php require 'views/includes/auth/base_script.php' ?>
 
+<script type="text/javascript">
+    $(".contact-click").click(function(){
+
+        var id = $(this).attr('id');
+        var arr = id.split('-');
+        var first_id = arr[1];
+
+        $.ajax({
+            method: "POST",
+            url: "contact/index",
+            data: ({id: first_id}),
+            success : function(response){
+                location.reload();
+            }
+        });
+    });
+</script>
 
 <script src="assets/auth/js/lib/data-table/datatables.min.js"></script>
 <script src="assets/auth/js/lib/data-table/dataTables.bootstrap.min.js"></script>

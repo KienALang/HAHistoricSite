@@ -118,5 +118,40 @@
 <!-- Right Panel -->
 
 <?php require 'views/includes/auth/base_script.php' ?>
+
+<script type="text/javascript">
+    $(document).ready(function (){
+        $("#create-form").validate({
+            errorPlacement: function(label, element) {
+                label.css({'display':'block'});
+                label.addClass('alert alert-danger');
+                label.insertBefore(element);
+            },
+            rules:{
+                hs_name:{
+                    required: true,
+                    minlength: 6,
+                },
+                hs_description:{
+                    required: true,
+                    minlength: 6,
+                },
+            },
+            messages:{
+                hs_name:{
+                    required: "Hãy nhập tên Bài đăng",
+                    minlength: "Tên Bài đăng chứa ít nhất 6 kí tự",
+                },
+                hs_description:{
+                    required: "Hãy nhập mô tả",
+                    minlength: "Mô tả phải chứa ít nhất 10 kí tự",
+                },
+            },
+            ignore: []
+            
+        });         
+    });
+</script>
+
 </body>
 </html>

@@ -20,9 +20,12 @@
                 <h1 class="heading" data-aos="fade-up"><em><?= BRAND_NAME ?></em>, Quảng Nam</h1>
                 <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">Trang web giới thiệu các khu di tích
                     ở TP Hội An, tỉnh Quảng Nam.</p>
-                <p data-aos="fade-up" data-aos-delay="100"><a href="#"
-                                                              class="btn uppercase btn-primary mr-md-2 mr-0 mb-3 d-sm-inline d-block">Khám
-                        Phá</a></p>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <a href="javascript:;" id="href-discover"
+                        class="btn uppercase btn-primary mr-md-2 mr-0 mb-3 d-sm-inline d-block">
+                        Khám Phá
+                    </a>
+                </p>
             </div>
         </div>
     </div>

@@ -924,3 +924,38 @@ textarea.form-control {
   -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
+
+.historic-category a img {
+    border-radius: 100px !important;
+    border: 5px solid #ebaa98 !important;
+    transition: border 1s;
+}
+
+.historic-category a img:hover {
+    border: 5px solid #e61c5d !important;
+}
+
+.historic-category h3 {
+    text-align: center;
+}
+
+.panel-index {
+    padding: 40px 0px;
+}
+
+#reset-value-search {
+    position: absolute;
+    z-index: 1;
+    margin: 15px 730px;
+    height: 20px;
+    transition: color 1s;
+
+}
+
+#reset-value-search:hover {
+    color: #e61c5d;
+}
+
+#search-data {
+    position: absolute;
+}
