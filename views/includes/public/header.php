@@ -19,7 +19,7 @@
                                         <li class="active"><a href="<?= URL; ?>">Trang Chủ</a></li>
                                         <li><a href="<?= URL; ?>historic_site">Giới thiệu di tích</a></li>
                                         <li><a href="<?= URL; ?>about">Về chúng tôi</a></li>
-                                        <li><a href="<?= URL; ?>contact">Liên hệ</a></li>
+                                        <li><a href="<?= URL; ?>show/contact">Liên hệ</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 extra-info">

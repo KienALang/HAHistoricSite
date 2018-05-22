@@ -84,5 +84,32 @@
 <!-- Right Panel -->
 
 <?php require 'views/includes/auth/base_script.php' ?>
+
+<script type="text/javascript">
+    $(document).ready(function (){
+        $("#create-form").validate({
+            errorPlacement: function(label, element) {
+                label.css({'display':'block'});
+                label.addClass('alert alert-danger');
+                label.insertBefore(element);
+            },
+            rules:{
+                name:{
+                    required: true,
+                    rangelength: [6, 32],
+                },
+            },
+            messages:{
+                name:{
+                    required: "Hãy nhập tên Slide",
+                    rangelength: "Tên Slide có độ dài từ 6-32 kí tự",
+                },
+            },
+            ignore: []
+            
+        });         
+    });
+</script>
+
 </body>
 </html>

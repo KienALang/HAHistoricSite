@@ -58,7 +58,7 @@
                         <div class="card-body">
 
                             <form name="create-form" action="" method="POST" enctype="multipart/form-data"
-                                  id="create-form">
+                                  id="edit-form">
                                 <div class="form-group text-center">
                                     <a href="<?= URL . 'slides' ?>" class="btn btn-primary">Trở về</a>
                                 </div>
@@ -97,5 +97,31 @@
 <!-- Right Panel -->
 
 <?php require 'views/includes/auth/base_script.php' ?>
+
+<script type="text/javascript">
+    $(document).ready(function (){
+        $("#edit-form").validate({
+            errorPlacement: function(label, element) {
+                label.css({'display':'block'});
+                label.addClass('alert alert-danger');
+                label.insertBefore(element);
+            },
+            rules:{
+                name:{
+                    required: true,
+                    rangelength: [6, 32],
+                },
+            },
+            messages:{
+                name:{
+                    required: "Hãy nhập tên Slide",
+                    rangelength: "Tên Slide có độ dài từ 6-32 kí tự",
+                },
+            },
+            ignore: []
+            
+        });         
+    });
+</script>
 </body>
 </html>

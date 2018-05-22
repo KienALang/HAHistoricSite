@@ -36,6 +36,7 @@
 
                 <li>
                     <a href="<?= URL; ?>category"> <i class="menu-icon fa fa-address-card"></i>Loại bài viết </a>
+                    <a href="<?= URL; ?>contact"> <i class="menu-icon fa fa-fax"></i>Liên hệ </a>
                 </li>
 
                 <h3 class="menu-title">Thống kê</h3><!-- /.menu-title -->

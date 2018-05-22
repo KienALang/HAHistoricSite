@@ -13,8 +13,12 @@ class Contact extends Controller
         parent::__construct();
     }
 
-    function index()
-    {
-        $this->view->render("contact");
+    function index() {
+    	$contacts = $this->model->getAll();
+    	if (isset($_POST['id'])) {
+    		$update = $this->model->updateStatus($_POST['id']);
+    	}
+    	$this->view->render("contact/index", ['contacts'=> $contacts]);
     }
+
 }
