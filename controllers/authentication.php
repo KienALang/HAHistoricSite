@@ -28,22 +28,17 @@ class Authentication extends Controller
         $email = $_POST['email'];
         $password = $_POST['password'];
         $this->doLogin($email, $password);
-
     }
 
-    function doLogin($email, $password)
+    private function doLogin($email, $password)
     {
         $user = $this->model->doLogin($email, $password);
         if ($user != null) {
             Session::set('loggedIn', true);
             Session::set('user', $user);
-            if ($user['roleId'] == 1) {
-                header('location: ../admin');
-            } else {
-                $this->view->render("user/index");
-            }
+            header('location: ../admin');
         } else {
-            $error = "Email or password are invalid!";
+            $error = "Tên tài khoản hoặc mật khẩu chưa chính xác!";
             $this->view->render('authentication/login', ['error' => $error]);
         }
     }
@@ -67,5 +62,3 @@ class Authentication extends Controller
         header('location: ../index');
     }
 }
-
-?>

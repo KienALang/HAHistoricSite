@@ -8,19 +8,7 @@ class Admin extends Controller
 
     function __construct()
     {
-        parent::__construct();
-        /*Session::init();
-
-        $logged = Session::get('loggedIn');
-        $admin = Session::get('user');
-        if (!$logged || $admin['roleId'] != 1) {
-            Session::destroy();
-            header('location: authentication');
-            exit;
-        }
-
-        require 'models/user_model.php';
-        $this->userModel = new User_Model(); */
+        parent::__construct(true);
     }
 
     function search()

@@ -11,11 +11,11 @@ class Authentication_Model extends Model
         parent::__construct();
     }
 
-    function doLogin($username, $password)
+    function doLogin($email, $password)
     {
 
-        $statement = $this->db->prepare("SELECT * FROM user WHERE username = ? AND password = md5(?)");
-        $statement->execute(array($username, $password));
+        $statement = $this->db->prepare("SELECT * FROM admin WHERE email = ? AND password = md5(?)");
+        $statement->execute(array($email, $password));
         $users = $statement->fetchAll();
 
         $count = $statement->rowCount();
@@ -29,7 +29,7 @@ class Authentication_Model extends Model
 
     function doRegister($user)
     {
-        $statement = $this->db->prepare("INSERT INTO user(username, password, roleId, email, fullname) VALUES (?, ?, ?, ?, ?)");
+        $statement = $this->db->prepare("INSERT INTO admin(full_name, email, password) VALUES (?, ?, ?)");
         return $statement->execute($user);
     }
 }

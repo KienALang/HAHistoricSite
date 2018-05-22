@@ -87,7 +87,8 @@
         <div class="col-sm-5">
             <div class="user-area dropdown float-right">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="user-avatar rounded-circle" src="<?= URL ?>assets/auth/images/admin.jpg" alt="User Avatar">
+                    <img class="user-avatar rounded-circle" src="<?= URL ?>assets/auth/images/admin.jpg"
+                         alt="User Avatar">
                 </a>
 
                 <div class="user-menu dropdown-menu">
@@ -95,7 +96,7 @@
 
                     <a class="nav-link" href="#"><i class="fa fa-cog"></i> Cài Đặt</a>
 
-                    <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Đăng Xuất</a>
+                    <a class="nav-link" href="<?= URL ?>authentication/logout"><i class="fa fa-power-off"></i> Đăng Xuất</a>
                 </div>
             </div>
         </div>

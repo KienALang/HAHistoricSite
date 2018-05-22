@@ -4,7 +4,7 @@ class Slides extends Controller
 {
     function __construct()
     {
-        parent::__construct();
+        parent::__construct(true);
     }
 
     function index()

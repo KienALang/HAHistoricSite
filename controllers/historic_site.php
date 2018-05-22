@@ -8,7 +8,7 @@ class Historic_Site extends Controller
     private $hsService;
     function __construct()
     {
-        parent::__construct();
+        parent::__construct(true);
         $this->hsService = new Historic_Site_Service();
     }
 

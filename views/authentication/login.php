@@ -14,11 +14,17 @@
         <div class="login-content">
             <div class="login-logo">
                 <a href="<?= URL; ?>" class="display-4 text-white">
-                    Đăng nhập
+                    <?= BRAND_NAME ?>
                 </a>
+                <h1 class="text-white">Đăng nhập</h1>
             </div>
             <div class="login-form">
-                <form name="login" action="<?= URL; ?>authentication/login">
+                <?php if (isset($error) && $error != null) { ?>
+                    <div class="alert alert-danger">
+                        <?= $error ?>
+                    </div>
+                <?php } ?>
+                <form name="login" action="<?= URL; ?>authentication/login" method="post">
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" name="email" required class="form-control" placeholder="Email">
@@ -34,7 +40,6 @@
                         <label class="pull-right">
                             <a href="#">Quên mật khẩu?</a>
                         </label>
-
                     </div>
                     <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Đăng nhập</button>
                     <div class="social-login-content">

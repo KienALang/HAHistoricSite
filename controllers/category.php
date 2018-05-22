@@ -15,7 +15,7 @@ class Category extends Controller
 
     function __construct()
     {
-        parent::__construct();
+        parent::__construct(true);
         $this->fileService = new File_Service();
     }
 
