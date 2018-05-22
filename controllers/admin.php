@@ -47,8 +47,6 @@ class Admin extends Controller
 
     function index()
     {
-        //$users = $this->userModel->getAll();
-
         $this->view->render("admin/index");
     }
 

@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afd3ec0c-957a-4637-82cd-d9a726fcd7fb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/auth/js/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/auth/js/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/public/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/public/js/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/contact_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/images/Du-lich-hoi-an-cam-nang-tu-a-den-z-iVIVU-1526920613.com-18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/contact/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/show/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/auth/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/auth/scss/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/historic_site_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/historic_site_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/show/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/historic_site/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historic_site/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/auth/base_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/auth/base_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/auth/left_panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/auth/left_panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/public/base_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/public/base_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/public/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/public/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/show/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/show/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/show/historic.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/show/historic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/slides/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/slides/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/slides/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/slides/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/slides/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/slides/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Controller.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,17 +51,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="left_panel.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/includes/auth/left_panel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -173,15 +141,15 @@
         <option value="$PROJECT_DIR$/views/show/historic.php" />
         <option value="$PROJECT_DIR$/views/historic_site/index.php" />
         <option value="$PROJECT_DIR$/models/authentication_model.php" />
-        <option value="$PROJECT_DIR$/controllers/authentication.php" />
         <option value="$PROJECT_DIR$/views/authentication/login.php" />
         <option value="$PROJECT_DIR$/views/includes/auth/header.php" />
-        <option value="$PROJECT_DIR$/libs/Controller.php" />
-        <option value="$PROJECT_DIR$/controllers/admin.php" />
         <option value="$PROJECT_DIR$/controllers/category.php" />
         <option value="$PROJECT_DIR$/controllers/historic_site.php" />
         <option value="$PROJECT_DIR$/controllers/slides.php" />
         <option value="$PROJECT_DIR$/views/includes/auth/left_panel.php" />
+        <option value="$PROJECT_DIR$/controllers/admin.php" />
+        <option value="$PROJECT_DIR$/controllers/authentication.php" />
+        <option value="$PROJECT_DIR$/libs/Controller.php" />
       </list>
     </option>
   </component>
@@ -219,24 +187,6 @@
             <path>
               <item name="HAHistoricSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="HAHistoricSite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HAHistoricSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HAHistoricSite" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HAHistoricSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HAHistoricSite" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HAHistoricSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HAHistoricSite" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,11 +256,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20451000" />
+    <option name="totallyTimeSpent" value="22348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -380,13 +329,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/includes/public/base_css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/includes/auth/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -652,11 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -664,24 +601,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/includes/auth/left_panel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="540">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="260">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/historic_site.php">
+    <entry file="file://$PROJECT_DIR$/libs/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2616">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="378">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/authentication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -692,10 +643,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/slides.php">
+    <entry file="file://$PROJECT_DIR$/controllers/contact.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/historic_site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2156">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="200">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -706,20 +660,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
+        <state relative-caret-position="-840" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/authentication.php">
+    <entry file="file://$PROJECT_DIR$/controllers/slides.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/includes/auth/left_panel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+        <state relative-caret-position="120">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>

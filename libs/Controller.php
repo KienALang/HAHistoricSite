@@ -5,18 +5,20 @@
  */
 class Controller
 {
+    public $view;
 
     function __construct($isAuthRequired = false)
     {
+        $this->view = new View();
         if ($isAuthRequired) {
+            Session::init();
             $logged = Session::get('loggedIn');
             if (!$logged) {
-                Session::destroy();
                 header('location: authentication');
                 exit;
             }
         }
-        $this->view = new View();
+
     }
 
     function loadModel($name)
